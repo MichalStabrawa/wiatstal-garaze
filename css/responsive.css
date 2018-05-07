@@ -1,0 +1,55 @@
+@media only screen and (max-width: 960px) {
+    
+    .social-contact a .fa-facebook-square{
+        font-size:20px;
+    }
+    .social-contact a img{
+        height: 20px;
+    }
+    
+    .social-contact a .fa-mobile-alt{
+        font-size:12px;
+    }
+    
+    
+    
+    nav {
+        height: auto;
+        flex-direction: column;
+    }
+    
+    nav ul {
+        border-top:1px solid #334354;
+        height: auto;
+       display:none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    nav div.logo{
+        width: 100%;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .hamburger-menu{
+        display:inline;
+    }
+    
+    nav img{
+        margin:0px;
+    }
+    
+    /*footer*/
+    footer{
+        height: auto;
+    }
+    footer .col-lg-6{
+        height:auto;
+        justify-content: space-around;
+    }
+    
+    
+  
+}

@@ -1,0 +1,751 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    width: 50%;
+    margin-top: 40px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 36px;
+    color: #334354;
+
+}
+
+h2::after {
+    width: 50%;
+    content: "";
+    display: block;
+    border-top: 3px solid #334354;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+
+h3 {
+    margin-top: 30px;
+    font-weight: 800;
+}
+/*social-contact****************************************************/
+
+.social-contact {
+    width: 100%;
+    height: 70px;
+    background: #334354;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: wrap;
+}
+
+
+
+.social-contact a {
+    color: #fff;
+}
+
+.social-contact a .fa-facebook-square {
+    color: #fff;
+}
+
+.social-contact a img {
+    height: 36px;
+}
+
+/*nav style*************************/
+
+nav {
+    background: #fff;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div.logo {
+    width: 20%;
+}
+
+.hamburger-menu{
+    display:none;
+}
+
+nav img {
+    margin-left: 20px;
+    height: 100px;
+}
+
+nav ul {
+    width: 80%;
+    list-style: none;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    width: auto;
+    height: 100px;
+    margin: 20px;
+    line-height: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #334354;
+    font-size: 19px;
+    display: block;
+    height: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #FFCB38;
+    color: #FFF;
+    background: #334354;
+
+    text-decoration: none;
+}
+
+/*header style***************************************/
+
+header {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/audi-1076316_1280.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.jumbotron {
+    margin-left: 20px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    background: transparent;
+    z-index: 10;
+    color: #fff;
+}
+
+.jumbotron .btn-primary {
+    margin-top: 50px;
+    background: #FFCB38;
+
+    background: #FFCB38;
+    height: 60px;
+
+    padding: 0px;
+    line-height: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0px;
+
+
+
+}
+
+/*offert section style start*/
+
+.offert {
+    width: 100%;
+}
+
+.offert .row {
+    text-align: center;
+    float: none;
+}
+
+.offert .col-md-4 {
+    box-sizing: border-box;
+
+    background: #fff;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 7px solid #334354;
+    border-bottom: 7px solid #334354;
+
+
+}
+
+.offert .col-md-4:hover {
+    opacity: 0.7;
+}
+
+.offert .col-md-4 a {
+    color: #334354;
+}
+
+.offert .col-md-4 .fa-align-justify {
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    width: 52px;
+    height: 41.3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.offert .col-md-4:nth-child(2) {
+    background-color: #334354;
+    color: #fff;
+    border-top: 7px solid #fff;
+    border-bottom: 7px solid #fff;
+}
+
+.offert .col-md-4:nth-child(2) a {
+    color: #fff;
+}
+
+
+
+
+
+/*recomended section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
+
+.recomended {
+ 
+    width: 100%;
+    height: auto;
+    
+    background: #FCFCF7;
+}
+
+.recomended .col-md-3 {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    padding: 0px;
+
+    color: #fff;
+    padding: 2px;
+    margin-bottom: 100px;
+}
+
+.recomended .col-md-3 h3,
+.recomended .col-md-3 p {
+    background-color: #334354;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.recomended img {
+    width: 100%;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: #334354;
+    opacity: 0;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.mask:hover {
+    opacity: 0.8;
+}
+
+.mask-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+    border: 2px solid #fff;
+}
+
+
+/*about section*/
+
+.about {
+
+    background-color: #334354;
+    color: #fff;
+}
+
+.about h2 {
+    color: #fff
+}
+
+.about h2::after {
+    border-color: #FFCB38;
+}
+
+.about .col-lg-3 {
+    padding: 5px;
+    padding-top: 15px;
+    background: #FFCB38;
+    box-sizing: border-box;
+    border: 3px solid #334354;
+    height: 350px;
+
+}
+
+.about h3,
+.about i,
+.about p {
+    color: #334354;
+}
+
+.about figure {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.about figure i {
+    line-height: 90px;
+    text-align: center;
+}
+
+.about #why-we {
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+}
+
+.about .container-fluid {
+    background-attachment: fixed;
+    height: 350px;
+    width: 100%;
+    background-image: url(../img/smart-home-3317439_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#test-target{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/porsche-3082666_1280.jpg);
+    background-position: bottom;
+}
+
+/*calc garage*/
+
+.calc-garage .col-lg-6 {
+
+    background-color: #fff;
+    padding: 0px;
+    height: 350px;
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: 5px solid #334354;
+}
+
+.calc-garage .col-lg-6:nth-child(2) {
+    background-color: #334354;
+    color: #fff;
+    border-top: 5px solid #fff;
+
+
+}
+
+
+.calc-garage figure {
+    width: 90px;
+    height: 90px;
+    background: #334354;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.calc-garage figure:nth-child(2) {
+    background: #fff;
+}
+
+
+.calc-garage figure i:nth-child(1) {
+    color: #fff;
+    line-height: 90px;
+}
+
+#calc2 {
+    background: #fff;
+}
+
+#calc2 i {
+    color: #334354;
+}
+
+.btn-calc {
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #334354;
+
+}
+
+.btn-calc:hover {
+    background: #FFCB38;
+
+}
+
+.btn-calc2 {
+    border: 2px solid #fff;
+}
+
+/*parallax-garage*/
+
+.parallax-garage {
+    background-attachment: fixed;
+    background-image: url(../img/garaz-dlug-paralax.jpeg);
+    height: 350px;
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+/*contact us*/
+
+.contact-us {
+    background-image: url(../img/contact-us.jpg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    background:#FCFCF7;
+}
+
+.contact-us h2 {
+    text-shadow: 2px 2px 2px rgba(255, 203, 56, 1);
+}
+
+.contact-us h2::after {
+    box-shadow: 2px 2px 2px rgba(255, 203, 56, 1);
+}
+
+
+
+.contact-us form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.contact-us form input {
+    width: 60%;
+    height: 50px;
+    border: 2px solid #334354;
+    background: transparent;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background:#fff;
+
+}
+
+.contact-us form input::placeholder,
+.contact-us form textarea::placeholder {
+    padding-left: 10px;
+    color: #FFCB38;
+}
+
+.contact-us form textarea {
+    width: 60%;
+    height: 100px;
+    background: #334354;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.btn-submit {
+    height: 50px;
+    width: 60%;
+    border: 0px;
+    background: #FFCB38;
+    border-radius: 5px;
+}
+
+/*our-works*/
+
+.our-works {
+    background: #fff;
+}
+
+.our-works h2 {
+    color: #334354;
+}
+
+.our-works h2::after {
+    border-color: #fff;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    margin:20px;
+    width: 50px;
+    background:transparent;
+    border:1px solid #fff;
+}
+.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span{
+    font-size:20px;
+    color:grey;
+}
+.item{
+    width: 280px;
+}
+
+/*social media section*/
+
+.social {
+    height: 100px;
+
+}
+
+.social .col-lg-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.social a{
+    margin:10px;
+    color:#000;
+}
+
+/*footer*/
+
+footer {
+    width:100%;
+    height: 402px;
+   background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(../img/call-center-2275745_1280.jpg);
+    background-size: cover;
+    background-position: center;
+   
+    
+
+}
+
+
+footer .col-lg-6 {
+    font-family: 'Montserrat', sans-serif;
+    height: 402px;
+    padding-top: 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+}
+footer .col-lg-6:nth-child(1){
+    flex-direction:column;
+    justify-content: center;
+}
+
+.author{
+    height: 45px;
+    background:#000;
+    color:#fff;
+    padding:5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer h4 {
+    
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(255, 203, 56, 1);
+}
+
+
+/*stylye galeria html---------------------------------------------------------------------------------------------------------------------*/
+
+.header-site{
+    width: 100%;
+    height: 120px;
+   border-top:2px solid #334354;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../img/audi-1076316_1280.jpg);
+    background-size:cover;
+    background-position: top;
+}
+.header-site h3{
+    height:100px;
+    margin:0px;
+    padding:0px;
+    line-height: 100px;
+    color:#fff;
+    border-bottom:2px solid #f6f6f6;
+    padding-bottom:5px;
+}
+
+.gallery{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+/*slider*/
+.products .uk-card-default{
+ height: auto;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 99%;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    margin-bottom: 50px;
+   
+}
+.uk-card-default p{
+    padding-top:10px;
+}
+.uk-card-default p span{
+    font-size:25px;
+    color:red;
+    padding-left:10px;
+}
+.uk-card-default .uk-card-title{
+    border-bottom: 2px solid #f6f6f6;
+}
+.uk-card-body-figure{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid #f6f6f6;
+    padding-bottom: 10px;
+}
+.uk-card-body-details{
+    padding-left:10px;
+}
+.uk-card-body-details span{
+    display: inline-block;
+    width: 50%;
+}
+
+
+a.uk-button.uk-button-default{
+    color:#000;
+    float:left;
+   background:transparent;
+}
+a.uk-button.uk-button-default:hover{
+    background:red;
+}
+
+.products img{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 450px;
+    
+}
+body > section.products > div > div:nth-child(2) > div > div > div > a.uk-position-center-left.uk-position-small.uk-hidden-hover.uk-slidenav-previous.uk-icon.uk-slidenav{
+    background: transparent;
+    color:#fff;
+}
+
+
+body > section.products > div > div:nth-child(2) > div > div > div > ul > li.uk-active > div > div.uk-card-body > button {
+    color:#fff;
+    background: red;
+    border-radius:5px;
+}
+svg{
+    background:red;
+    opacity:0.7;
+}
+
+.uk-card-primary.uk-card-body .uk-button-default, .uk-card-primary>:not([class*=uk-card-media]) .uk-button-default, .uk-card-secondary.uk-card-body .uk-button-default, .uk-card-secondary>:not([class*=uk-card-media]) .uk-button-default, .uk-light .uk-button-default, .uk-offcanvas-bar .uk-button-default, .uk-overlay-primary .uk-button-default, .uk-section-primary:not(.uk-preserve-color) .uk-button-default, .uk-section-secondary:not(.uk-preserve-color) .uk-button-default, .uk-tile-primary:not(.uk-preserve-color) .uk-button-default, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-default{
+    background:red;
+    border-radius:5px;
+}
+
+/*garaze.html style******************************************************88
+*/
+.header-site-garage h3{
+    border-bottom:1.5px solid grey;
+}
+
+
+.garage-content .row{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(../img/garaz-brazowy-tlo.jpeg);
+    background-size:cover;
+    background-position: center;
+    background-size:cover;
+    height:500px;
+    
+    
+}
+.garage-content .row .col-lg-12:nth-child(1){
+    display:flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+.garage-content .row .col-lg-12 p{
+    font-size:20px;
+}
+.garage-content .row .col-lg-12 p:nth-child(1){
+    margin-bottom: 50px;
+}
+.garage-content .row .col-lg-12 p:nth-child(2){
+    font-size: 16px;
+    color:grey;
+    margin-bottom: 20px;
+}
+.garage-content .row .col-lg-12 span{
+    color:forestgreen;
+    margin-right:10px;
+}
+.header-site-content-img .row{
+    border-top:2px solid grey;
+    margin-bottom: 10px;
+}
+.header-site-content-img div.uk-first-column{
+    width: 500px;
+}
+
