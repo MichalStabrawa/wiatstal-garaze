@@ -829,12 +829,12 @@ svg {
 }
 
 .calculator select {
-    background: #000;
-    color: #fff;
-    width: 250px;
+   
+    color: #000;
+    width: 100%;
     height: 45px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .calculator select::after {
@@ -842,6 +842,17 @@ svg {
     width: 35px;
     height: 35px;
     color: red;
+}
+.calculator .figure-calc{
+    margin-left:auto;
+    margin-right:auto;
+    width: 50%;
+    height: 50%;
+}
+
+/*figure-calc*/
+#figure-spad-tyl{
+    display:none;
 }
 
 /*kontakt.html style **************************************************************************/
