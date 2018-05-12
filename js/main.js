@@ -17,20 +17,24 @@ function sprawdz() {
 
 
     var select1 = document.getElementById('szerokosc').value;
+    
+    console.log(select1 +"szerokosc");
     var select2 = document.getElementById('dlugosc').value;
 
-    var roznicaDlugosc = (parseFloat(select1) - 2) * 2;
-    console.log(roznicaDlugosc + "dlugosci");
+    var roznicaSzerokosc = (parseFloat(select1) - 2) * 2;
+    console.log(roznicaSzerokosc + "szerokosc roznica");
 
-    var dodajDlugosc = roznicaDlugosc * 150 + 950;
+    var dodajSzerokosc = roznicaSzerokosc * 250 + 950;
+    
+    console.log("Dodaj szerokosc" + dodajSzerokosc)
 
-    console.log("cena po dlugosci" + dodajDlugosc);
+   // console.log("cena po dlugosci" + dodajDlugosc);
     var roznica = (parseFloat(select2) - 3) * 2;
 
-    var dodajSzer = roznica * 250 + dodajDlugosc;
+    var dodajSzer = roznica * 150 + dodajSzerokosc;
 
 
-    cena1.innerHTML = dodajSzer+"zl";
+    cena1.innerHTML ="CENA" +" "+ dodajSzer+"zl";
 
 }
 
