@@ -854,6 +854,9 @@ svg {
 #figure-spad-tyl{
     display:none;
 }
+.calculator span.price-garage{
+    color:red;
+}
 
 /*kontakt.html style **************************************************************************/
 

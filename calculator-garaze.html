@@ -10,23 +10,23 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-font-awensome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-   
+
     <!--bootstrap-->
     <link rel="stylesheet" href="Ulkit/css/uikit.min.css">
-    
+
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <!--general style-->
     <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/responsive.css">
-<script src="Ulkit/js/uikit.min.js"></script>
-<script src="Ulkit/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="Ulkit/js/uikit.min.js"></script>
+    <script src="Ulkit/js/uikit-icons.min.js"></script>
 </head>
 
 <body>
     <section class="social-contact">
         <a href=""><i class="fab fa-3x fa-facebook-square"></i></a>
         <a href="tel:+48 678 897 657"><i class="fas fa-2x fa-mobile-alt"> +48 678 897 657</i></a>
-         <a href="tel:+48 678 897 657"><i class="fas fa-2x fa-mobile-alt"> +48 678 897 657</i></a>
+        <a href="tel:+48 678 897 657"><i class="fas fa-2x fa-mobile-alt"> +48 678 897 657</i></a>
         <a href=""><img src="img/flaga.png" alt=""></a>
     </section>
     <!--nav-->
@@ -41,28 +41,53 @@
         </ul>
     </nav>
 
-   <section class="calculator-title">
-       <div class="container">
-           <div class="row">
-              <div class="col-lg-12"><h2><span><i class="fas fa-calculator"></i> </span>KONFIGURATOR GARAŻU</h2></div>
-               
-           </div>
-       </div>
-   </section>
-   
-   <section class="calculator">
-       <div class="container">
-          <div class="row"><div class="col-lg-12"><h3>WYBIERZ TYP GARAŻU</h3></div></div>
-           <div class="row">
-               <div class="col-lg-12 " id="col-figure"><a href="" id="garageSpadTyl"><figure><i class="fas fa-3x fa-warehouse"></i><figcaption>spad w tył</figcaption></figure></a>
-               <figure><i class="fas fa-3x fa-warehouse"></i><figcaption>dwuspadowy</figcaption></figure>
-               <figure><i class="fas fa-3x fa-warehouse"></i><figcaption>spad w lewo</figcaption></figure>
-               <figure><i class="fas fa-3x fa-warehouse"></i><figcaption>spad w prawo</figcaption></figure>
-               <figure><i class="fas fa-3x fa-warehouse"></i><figcaption>spad w przód</figcaption></figure></div>
-           </div>
-           
-           <div class=" row"><div class="col-lg-12"><h3>Wybierz wymiary garażu</h3></div></div>
-           <div class=" row"><div class="col-lg-6"><label for="">Szerokość(m)</label><select name="" id=""><option value="2">2m</option>
+    <section class="calculator-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2><span><i class="fas fa-calculator"></i> </span>KONFIGURATOR GARAŻU</h2>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>WYBIERZ TYP GARAŻU</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 " id="col-figure">
+                   
+                        <figure id="test"><i class="fas fa-3x fa-warehouse"></i>
+                            <figcaption>spad w tył</figcaption>
+                        </figure>
+                
+                    <figure><i class="fas fa-3x fa-warehouse"></i>
+                        <figcaption>dwuspadowy</figcaption>
+                    </figure>
+                    <figure><i class="fas fa-3x fa-warehouse"></i>
+                        <figcaption>spad w lewo</figcaption>
+                    </figure>
+                    <figure><i class="fas fa-3x fa-warehouse"></i>
+                        <figcaption>spad w prawo</figcaption>
+                    </figure>
+                    <figure><i class="fas fa-3x fa-warehouse"></i>
+                        <figcaption>spad w przód</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class=" row">
+                <div class="col-lg-12">
+                    <h3>Wybierz wymiary garażu</h3>
+                </div>
+            </div>
+            <div class=" row">
+                <div class="col-lg-6"><label for="">Szerokość(m)</label><select name="" id=""><option value="2">2m</option>
            <option value="2.5">2.5m</option>
            <option value="3">3m</option>
            <option value="3.5">3.5m</option>
@@ -73,8 +98,8 @@
            <option value="6.5">6.5m</option>
            <option value="7">7m</option>
            <option value="7.5">7.5m</option></select>
-           
-           <label for="">Długość(m)</label><select name="" id="">
+
+                    <label for="">Długość(m)</label><select name="" id="">
            <option value="3">3m</option>
            <option value="3.5">3.5m</option>
            <option value="4">4.5m</option>
@@ -84,15 +109,22 @@
            <option value="6.5">6.5m</option>
            <option value="7">7m</option>
            <option value="7.5">7.5m</option></select>
-           </div>
-           <div class="col-lg-6">
-              <figure class="figure-calc" id="figure-spad-tyl"><img src="img//garaz-brama.jpeg" alt=""></figure>
-               
-           </div></div>
-       </div>
-   </section>
+                </div>
+                <div class="col-lg-6">
+                    <figure class="figure-calc" id="figure-spad-tyl"><img src="img//garaz-brama.jpeg" alt=""></figure>
 
-<!--footer---------------------------------------------------->
+                </div>
+            </div>
+            
+            <div class="row cena">
+                <div class="col-lg-12 col-md-12">
+                    <h3><span class="price-garage">CENA:</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer---------------------------------------------------->
     <footer>
         <div class="container">
 
@@ -131,10 +163,8 @@
 
 
     <script src="js/jquery.min.js"></script>
-   
+
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js">
-
-
     </script>
     <script src="js/main.js"></script>
 
