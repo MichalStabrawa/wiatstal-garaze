@@ -43,6 +43,7 @@ h3 {
     margin-top: 30px;
     font-weight: 800;
 }
+
 /*social-contact****************************************************/
 
 .social-contact {
@@ -83,8 +84,8 @@ nav div.logo {
     width: 20%;
 }
 
-.hamburger-menu{
-    display:none;
+.hamburger-menu {
+    display: none;
 }
 
 nav img {
@@ -155,19 +156,20 @@ header {
 
 .jumbotron .btn-primary {
     margin-top: 50px;
-    background: #FFCB38;
-
-    background: #FFCB38;
+    background: #B9A15A;
     height: 60px;
-
     padding: 0px;
     line-height: 60px;
     padding-left: 15px;
     padding-right: 15px;
     border: 0px;
 
+}
 
-
+.jumbotron .btn-primary:hover {
+    opacity: 0.9;
+    background: #FF0000;
+    transition: 0.3s;
 }
 
 /*offert section style start*/
@@ -233,10 +235,10 @@ header {
 /*recomended section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
 
 .recomended {
- 
+
     width: 100%;
     height: auto;
-    
+
     background: #FCFCF7;
 }
 
@@ -307,13 +309,13 @@ header {
 }
 
 .about h2::after {
-    border-color: #FFCB38;
+    border-color: #B9A15A;
 }
 
 .about .col-lg-3 {
     padding: 5px;
     padding-top: 15px;
-    background: #FFCB38;
+    background: #B9A15A;
     box-sizing: border-box;
     border: 3px solid #334354;
     height: 350px;
@@ -325,6 +327,7 @@ header {
 .about p {
     color: #334354;
 }
+
 
 .about figure {
     margin-left: auto;
@@ -357,7 +360,7 @@ header {
     background-position: center;
 }
 
-#test-target{
+#test-target {
     width: 100%;
     height: 400px;
     background-image: url(../img/porsche-3082666_1280.jpg);
@@ -419,11 +422,14 @@ header {
     border-radius: 5px;
     background: transparent;
     border: 2px solid #334354;
+    transition: 0.3s;
 
 }
 
 .btn-calc:hover {
-    background: #FFCB38;
+    background: #B9A15A;
+    border: 0px;
+    transition: 0.3s;
 
 }
 
@@ -450,16 +456,10 @@ header {
     background-size: cover;
     background-position: center;
     height: auto;
-    background:#FCFCF7;
+    background: #FCFCF7;
 }
 
-.contact-us h2 {
-    text-shadow: 2px 2px 2px rgba(255, 203, 56, 1);
-}
 
-.contact-us h2::after {
-    box-shadow: 2px 2px 2px rgba(255, 203, 56, 1);
-}
 
 
 
@@ -477,25 +477,25 @@ header {
 .contact-us form input {
     width: 60%;
     height: 50px;
-    border: 2px solid #334354;
+    border: 1px solid #B9A15A;
     background: transparent;
     margin-bottom: 10px;
-    border-radius: 5px;
-    background:#fff;
+    border-radius: 3px;
+    background: #fff;
 
 }
 
 .contact-us form input::placeholder,
 .contact-us form textarea::placeholder {
     padding-left: 10px;
-    color: #FFCB38;
+    color: #B9A15A;
 }
 
 .contact-us form textarea {
     width: 60%;
     height: 100px;
     background: #334354;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-bottom: 10px;
     padding-top: 10px;
 }
@@ -504,8 +504,8 @@ header {
     height: 50px;
     width: 60%;
     border: 0px;
-    background: #FFCB38;
-    border-radius: 5px;
+    background: #B9A15A;
+    border-radius: 3px;
 }
 
 /*our-works*/
@@ -521,17 +521,22 @@ header {
 .our-works h2::after {
     border-color: #fff;
 }
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
-    margin:20px;
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    margin: 20px;
     width: 50px;
-    background:transparent;
-    border:1px solid #fff;
+    background: transparent;
+    border: 1px solid #fff;
 }
-.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span{
-    font-size:20px;
-    color:grey;
+
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span {
+    font-size: 20px;
+    color: grey;
 }
-.item{
+
+.item {
     width: 280px;
 }
 
@@ -549,21 +554,21 @@ header {
     height: 100px;
 }
 
-.social a{
-    margin:10px;
-    color:#000;
+.social a {
+    margin: 10px;
+    color: #000;
 }
 
 /*footer*/
 
 footer {
-    width:100%;
+    width: 100%;
     height: 402px;
-   background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(../img/call-center-2275745_1280.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/call-center-2275745_1280.jpg);
     background-size: cover;
     background-position: center;
-   
-    
+
+
 
 }
 
@@ -572,24 +577,25 @@ footer .col-lg-6 {
     font-family: 'Montserrat', sans-serif;
     height: 402px;
     padding-top: 50px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 
 
 }
-footer .col-lg-6:nth-child(1){
-    flex-direction:column;
+
+footer .col-lg-6:nth-child(1) {
+    flex-direction: column;
     justify-content: center;
 }
 
-.author{
+.author {
     height: 45px;
-    background:#000;
-    color:#fff;
-    padding:5px;
-    display:flex;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -599,153 +605,335 @@ footer p {
 }
 
 footer h4 {
-    
+
     color: #fff;
     text-shadow: 1px 1px 2px rgba(255, 203, 56, 1);
 }
 
+/*modal 1*/
 
+#modal-example input[type="text"] {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #B9A15A;
+    margin-bottom:10px;
+}
+
+#modal-example input[type="text"]::placeholder{
+    padding:5px;
+}
+#modal-example .uk-button-primary{
+    background:#B9A15A; 
+}
 /*stylye galeria html---------------------------------------------------------------------------------------------------------------------*/
 
-.header-site{
+.header-site {
     width: 100%;
     height: 120px;
-   border-top:2px solid #334354;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../img/audi-1076316_1280.jpg);
-    background-size:cover;
+    border-top: 2px solid #334354;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/audi-1076316_1280.jpg);
+    background-size: cover;
     background-position: top;
 }
-.header-site h3{
-    height:100px;
-    margin:0px;
-    padding:0px;
+
+.header-site h3 {
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
     line-height: 100px;
-    color:#fff;
-    border-bottom:2px solid #f6f6f6;
-    padding-bottom:5px;
+    color: #fff;
+    border-bottom: 2px solid #f6f6f6;
+    padding-bottom: 5px;
 }
 
-.gallery{
-    padding-top:20px;
+.gallery {
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
 /*slider*/
-.products .uk-card-default{
- height: auto;
-    display:flex;
+
+.products .uk-card-default {
+    height: auto;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 99%;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
     margin-bottom: 50px;
-   
+
 }
-.uk-card-default p{
-    padding-top:10px;
+
+.uk-card-default p {
+    padding-top: 10px;
 }
-.uk-card-default p span{
-    font-size:25px;
-    color:red;
-    padding-left:10px;
+
+.uk-card-default p span {
+    font-size: 25px;
+    color: red;
+    padding-left: 10px;
 }
-.uk-card-default .uk-card-title{
+
+.uk-card-default .uk-card-title {
+    font-size: 2em;
     border-bottom: 2px solid #f6f6f6;
 }
-.uk-card-body-figure{
-    display:flex;
+
+.uk-card-body-figure {
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     border-bottom: 2px solid #f6f6f6;
     padding-bottom: 10px;
 }
-.uk-card-body-details{
-    padding-left:10px;
+
+.uk-card-body-details {
+    padding-left: 10px;
 }
-.uk-card-body-details span{
+
+.uk-card-body-details span {
     display: inline-block;
     width: 50%;
 }
 
 
-a.uk-button.uk-button-default{
-    color:#000;
-    float:left;
-   background:transparent;
-}
-a.uk-button.uk-button-default:hover{
-    background:red;
+a.uk-button.uk-button-default {
+    color: #000;
+    float: left;
+    background: transparent;
 }
 
-.products img{
+a.uk-button.uk-button-default:hover {
+    background: red;
+}
+
+.products img {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     width: 450px;
-    
+
 }
-body > section.products > div > div:nth-child(2) > div > div > div > a.uk-position-center-left.uk-position-small.uk-hidden-hover.uk-slidenav-previous.uk-icon.uk-slidenav{
+
+body > section.products > div > div:nth-child(2) > div > div > div > a.uk-position-center-left.uk-position-small.uk-hidden-hover.uk-slidenav-previous.uk-icon.uk-slidenav {
     background: transparent;
-    color:#fff;
+    color: #fff;
 }
 
 
 body > section.products > div > div:nth-child(2) > div > div > div > ul > li.uk-active > div > div.uk-card-body > button {
-    color:#fff;
+    color: #fff;
     background: red;
-    border-radius:5px;
-}
-svg{
-    background:red;
-    opacity:0.7;
+    border-radius: 5px;
 }
 
-.uk-card-primary.uk-card-body .uk-button-default, .uk-card-primary>:not([class*=uk-card-media]) .uk-button-default, .uk-card-secondary.uk-card-body .uk-button-default, .uk-card-secondary>:not([class*=uk-card-media]) .uk-button-default, .uk-light .uk-button-default, .uk-offcanvas-bar .uk-button-default, .uk-overlay-primary .uk-button-default, .uk-section-primary:not(.uk-preserve-color) .uk-button-default, .uk-section-secondary:not(.uk-preserve-color) .uk-button-default, .uk-tile-primary:not(.uk-preserve-color) .uk-button-default, .uk-tile-secondary:not(.uk-preserve-color) .uk-button-default{
-    background:red;
-    border-radius:5px;
+svg {
+    background: red;
+    opacity: 0.7;
+}
+
+.uk-card-primary.uk-card-body .uk-button-default,
+.uk-card-primary > :not([class*=uk-card-media]) .uk-button-default,
+.uk-card-secondary.uk-card-body .uk-button-default,
+.uk-card-secondary > :not([class*=uk-card-media]) .uk-button-default,
+.uk-light .uk-button-default,
+.uk-offcanvas-bar .uk-button-default,
+.uk-overlay-primary .uk-button-default,
+.uk-section-primary:not(.uk-preserve-color) .uk-button-default,
+.uk-section-secondary:not(.uk-preserve-color) .uk-button-default,
+.uk-tile-primary:not(.uk-preserve-color) .uk-button-default,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-button-default {
+    background: red;
+    border-radius: 5px;
 }
 
 /*garaze.html style******************************************************88
 */
-.header-site-garage h3{
-    border-bottom:1.5px solid grey;
+
+.header-site-garage h3 {
+    border-bottom: 1.5px solid grey;
 }
 
 
-.garage-content .row{
-    background-image:linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)),url(../img/garaz-brazowy-tlo.jpeg);
-    background-size:cover;
+.garage-content .row {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/garaz-brazowy-tlo.jpeg);
+    background-size: cover;
     background-position: center;
-    background-size:cover;
-    height:500px;
-    
-    
+    background-size: cover;
+    height: 500px;
+
+
 }
-.garage-content .row .col-lg-12:nth-child(1){
-    display:flex;
+
+.garage-content .row .col-lg-12:nth-child(1) {
+    display: flex;
     height: 100%;
     justify-content: center;
     flex-direction: column;
 }
-.garage-content .row .col-lg-12 p{
-    font-size:20px;
+
+.garage-content .row .col-lg-12 p {
+    font-size: 20px;
 }
-.garage-content .row .col-lg-12 p:nth-child(1){
+
+.garage-content .row .col-lg-12 p:nth-child(1) {
     margin-bottom: 50px;
 }
-.garage-content .row .col-lg-12 p:nth-child(2){
+
+.garage-content .row .col-lg-12 p:nth-child(2) {
     font-size: 16px;
-    color:grey;
+    color: grey;
     margin-bottom: 20px;
 }
-.garage-content .row .col-lg-12 span{
-    color:forestgreen;
-    margin-right:10px;
+
+.garage-content .row .col-lg-12 span {
+    color: forestgreen;
+    margin-right: 10px;
 }
-.header-site-content-img .row{
-    border-top:2px solid grey;
+
+.header-site-content-img .row {
+    border-top: 2px solid grey;
     margin-bottom: 10px;
 }
-.header-site-content-img div.uk-first-column{
+
+.header-site-content-img div.uk-first-column {
     width: 500px;
 }
 
+/*calculator-garage.html style***********************************************************************************/
+
+.calculator-title {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/accountant-1238598_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.calculator-title h2 {
+    color: #fff;
+}
+
+.calculator #col-figure {
+    display: flex;
+    justify-content: space-around;
+}
+
+.calculator figure {
+    border: 1px solid #000;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator select {
+    background: #000;
+    color: #fff;
+    width: 250px;
+    height: 45px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.calculator select::after {
+    content: "VSSSS";
+    width: 35px;
+    height: 35px;
+    color: red;
+}
+
+/*kontakt.html style **************************************************************************/
+
+.contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/garaze-blaszane-kontakt.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contact h2 {
+    color: #fff;
+}
+
+.address-company {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.address-company a {
+    color: #334354;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.address-company a figure {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #B9A15A;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+
+    border-radius: 50%;
+}
+
+.address-company a figure i {
+    line-height: 60px;
+}
+
+.address-company a span {
+    color: #B9A15A;
+    padding-left: 10px;
+    font-size: 2.2rem;
+
+}
+
+.phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.message {
+    border-top: 3px solid #B9A15A;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../img/contact-us.jpg);
+    background-size: cover;
+}
+
+section.message h3 {
+    margin-top: 0px;
+}
+
+.message form {
+    box-sizing: border-box;
+}
+
+.message input[type="text"],
+.message input[type="email"] {
+    width: 49%;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #B9A15A;
+    margin-top: 5px;
+}
+
+.message textarea {
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #B9A15A;
+    width: 98.5%;
+    height: 100px;
+}
+
+.message input[type="submit"] {
+    width: 24.5%;
+    height: 50px;
+    background: #B9A15A;
+    border-radius: 3px;
+    border: 1px solid transparent;
+}
