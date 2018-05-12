@@ -826,6 +826,7 @@ svg {
     text-align: center;
     justify-content: center;
     align-items: center;
+    cursor:pointer;
 }
 
 .calculator select {
@@ -854,8 +855,35 @@ svg {
 #figure-spad-tyl{
     display:none;
 }
+
+.cena{
+    margin-top:10px;
+    margin-bottom: 10px;
+    color:#B9A15A;
+    background:#334354;
+    padding:10px;
+}
 .calculator span.price-garage{
-    color:red;
+    color:#B9A15A;
+}
+.color, .color2{
+    display:inline-block;
+    width: 50px;
+    height: 50px;
+    background:#9d9fa6;
+    margin-top:5px;
+}
+.color2{
+    background:#613c41;
+}
+.show-price{
+    margin-top:10px;
+    width: 30%;
+    height: 35px;
+    background:#B9A15A;
+    color:#334354;
+    border:0px;
+    border-radius:3px;
 }
 
 /*kontakt.html style **************************************************************************/
