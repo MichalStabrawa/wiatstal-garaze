@@ -1,3 +1,5 @@
+
+
 body {
     box-sizing: border-box;
     margin: 0px;
@@ -43,6 +45,15 @@ h3 {
     margin-top: 30px;
     font-weight: 800;
 }
+
+svg{
+    width: 35px;
+    height:35px;
+    padding:5px;
+    color:#fff;
+    background:grey;
+}
+
 
 /*social-contact****************************************************/
 
@@ -508,37 +519,25 @@ header {
     border-radius: 3px;
 }
 
-/*our-works*/
+/*slideshow section*/
 
-.our-works {
-    background: #fff;
+.slideshow{
+    background:#B9A15A;
+    padding-bottom: 50px;
 }
 
-.our-works h2 {
-    color: #334354;
+.slideshow ul{
+    border:2px solid #fff;
 }
 
-.our-works h2::after {
-    border-color: #fff;
+.slideshow svg{
+    width: 35px;
+    height:35px;
+    padding:5px;
+    color:#fff;
+    background:grey;
 }
 
-.owl-carousel .owl-nav button.owl-next,
-.owl-carousel .owl-nav button.owl-prev {
-    margin: 20px;
-    width: 50px;
-    background: transparent;
-    border: 1px solid #fff;
-}
-
-.owl-carousel .owl-nav button.owl-next span,
-.owl-carousel .owl-nav button.owl-prev span {
-    font-size: 20px;
-    color: grey;
-}
-
-.item {
-    width: 280px;
-}
 
 /*social media section*/
 
@@ -862,6 +861,7 @@ svg {
     color:#B9A15A;
     background:#334354;
     padding:10px;
+    display:none;
 }
 .calculator span.price-garage{
     color:#B9A15A;
@@ -878,12 +878,21 @@ svg {
 }
 .show-price{
     margin-top:10px;
-    width: 30%;
+    width: 35%;
     height: 35px;
     background:#B9A15A;
     color:#334354;
     border:0px;
     border-radius:3px;
+}
+
+button#buy{
+    height: 35px;
+    background:red;
+    color:#fff;
+    border-radius:3px;
+    border:0px;
+    width: 200px;
 }
 
 /*kontakt.html style **************************************************************************/
@@ -986,21 +995,3 @@ input#green{
     position: relative;
 }
 
-/*test input radio*/
-input#green::after {
-    content: "V";
-    background: blue;
-    position: absolute;
-    top:0;
-    left:0;
-    display:inline-block;
-    height: 50px;
-    width:50px;
-    color:#fff;
-    text-align: center;
-    line-height: 50px;
-    
-}
-input#green:hover{
-    color:red;
-}

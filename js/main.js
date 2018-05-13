@@ -22,7 +22,7 @@ function sprawdz() {
     var select2 = document.getElementById('dlugosc').value;
 
     var roznicaSzerokosc = (parseFloat(select1) - 2) * 2;
-    console.log(roznicaSzerokosc + "szerokosc roznica");
+   
 
     var dodajSzerokosc = roznicaSzerokosc * 250 + 950;
 
@@ -34,7 +34,7 @@ function sprawdz() {
     //transport value
     var transportSelect=parseFloat(document.getElementById('transport').value);
     
-    console.log(transportSelect);
+  
     
 
 
@@ -49,8 +49,9 @@ if(transportSelect=="0"){
 }else if(transportSelect=="50"){
      document.getElementById('price-transport').innerHTML= "TRANSPORT:śląskie"
 }
-
-
+    
+   var divCena= document.getElementById('cenaDiv1');
+    divCena.style.display="block";
 
 }
 
