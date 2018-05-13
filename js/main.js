@@ -72,7 +72,8 @@ if(transportSelect=="0"){
    var divCena= document.getElementById('cenaDiv1');
     divCena.style.display="block";
     
-
+var element=document.getElementById('cenaDiv1');
+    element.scrollIntoView();
 
 }
 
