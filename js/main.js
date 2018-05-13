@@ -6,7 +6,13 @@ $(document).ready(function () {
     $("#test").click(function () {
         $("#figure-spad-tyl").show();
         $("#calc1").show();
+            $('html, body').animate({
+        scrollTop: $('#figure-spad-tyl').offset().top
+    }, 1000);
     })
+    
+    /*scroll top button to section noclegi*/
+
 
 
 })
@@ -65,6 +71,8 @@ if(transportSelect=="0"){
     
    var divCena= document.getElementById('cenaDiv1');
     divCena.style.display="block";
+    
+
 
 }
 
