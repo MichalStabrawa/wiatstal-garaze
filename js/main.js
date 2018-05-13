@@ -9,7 +9,16 @@ $(document).ready(function () {
             $('html, body').animate({
         scrollTop: $('#figure-spad-tyl').offset().top
     }, 1000);
+        
+   })
+    
+    $("#btn-header").click(function(){
+               $('html, body').animate({
+        scrollTop: $('#offert1').offset().top
+    }, 1000);
     })
+    
+    
     
     /*scroll top button to section noclegi*/
 
