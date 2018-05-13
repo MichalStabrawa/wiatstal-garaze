@@ -43,12 +43,14 @@ function sprawdz() {
     //door variables
     
     var doorValue=parseFloat(document.getElementById('door').value);
+    //window variables
+    windowValue=parseFloat(document.getElementById('window-price').value);
     
   
     
 
 
-    cena1.innerHTML = "CENA" + " " + (dodajSzer+ transportSelect + garageHeight + doorValue)  +"zł";
+    cena1.innerHTML = "CENA" + " " + (dodajSzer+ transportSelect + garageHeight + doorValue + windowValue)  +"zł";
     
     document.getElementById("price-szer").innerHTML="szerokość" +" "+ select1+"m";
     

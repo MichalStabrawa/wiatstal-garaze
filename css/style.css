@@ -878,13 +878,14 @@ svg {
     background:#613c41;
 }
 .show-price{
-    margin-top:10px;
-    width: 35%;
+    margin-top:15px;
+    width: 200px;
     height: 35px;
     background:#B9A15A;
     color:#334354;
     border:0px;
     border-radius:3px;
+    margin-bottom: 20px;
 }
 
 button#buy{
