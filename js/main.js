@@ -5,6 +5,7 @@ $(document).ready(function () {
 
     $("#test").click(function () {
         $("#figure-spad-tyl").show();
+        $("#calc1").show();
     })
 
 

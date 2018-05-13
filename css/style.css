@@ -855,6 +855,9 @@ svg {
     margin-right:auto;
     width: 50%;
     height: 50%;
+    padding-top:40px;
+    padding-bottom: 40px;
+    
 }
 
 /*figure-calc*/
@@ -906,6 +909,10 @@ button#buy{
     margin-top:5px;
    
     padding-top:9px;
+}
+
+#calc1{
+    display:none;
 }
 
 /*kontakt.html style **************************************************************************/
