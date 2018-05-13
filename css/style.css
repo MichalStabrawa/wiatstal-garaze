@@ -814,6 +814,7 @@ svg {
 .calculator #col-figure {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .calculator figure {
