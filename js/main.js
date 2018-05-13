@@ -34,11 +34,21 @@ function sprawdz() {
     //transport value
     var transportSelect=parseFloat(document.getElementById('transport').value);
     
+    var garageHeight=parseFloat(document.getElementById("podwyzszenie").value);
+    
+    if(select1>"2" & select1<"3" &garageHeight!="0"){
+        garageHeight+= 10;
+    }
+    
+    //door variables
+    
+    var doorValue=parseFloat(document.getElementById('door').value);
+    
   
     
 
 
-    cena1.innerHTML = "CENA" + " " + (dodajSzer+ transportSelect)  +"zł";
+    cena1.innerHTML = "CENA" + " " + (dodajSzer+ transportSelect + garageHeight + doorValue)  +"zł";
     
     document.getElementById("price-szer").innerHTML="szerokość" +" "+ select1+"m";
     

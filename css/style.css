@@ -894,6 +894,11 @@ button#buy{
     border:0px;
     width: 200px;
 }
+.calculator label{
+    margin-top:5px;
+   
+    padding-top:9px;
+}
 
 /*kontakt.html style **************************************************************************/
 
