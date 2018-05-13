@@ -56,3 +56,10 @@
     
   
 }
+
+/*540px max*/
+@media only screen and (max-width: 540px){
+    .products .uk-card-default{
+        flex-direction: column;
+    }
+}
