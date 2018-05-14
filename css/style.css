@@ -459,6 +459,17 @@ header {
     background-size: cover;
 }
 
+/*service section*/
+
+.service{
+    background-image: url(../img/poland-2853164_1280.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+.service p{
+color:#334354;}
+
 
 /*contact us*/
 
