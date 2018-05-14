@@ -40,11 +40,11 @@ function sprawdz() {
     var roznicaSzerokosc = (parseFloat(select1) - 2) * 2;
    
 
-    var dodajSzerokosc = roznicaSzerokosc * 250 + 950;
+    var dodajSzerokosc = roznicaSzerokosc * 75 + 950;
 
     var roznica = (parseFloat(select2) - 3) * 2;
 
-    var dodajSzer = roznica * 150 + dodajSzerokosc;
+    var dodajSzer = roznica * 75 + dodajSzerokosc;
     
     
     //transport value

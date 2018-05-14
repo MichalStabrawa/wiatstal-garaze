@@ -1,65 +1,70 @@
 @media only screen and (max-width: 960px) {
-    
-    h2{
+
+    h2 {
         width: 100%;
     }
-    .social-contact a .fa-facebook-square{
-        font-size:20px;
+    .social-contact a .fa-facebook-square {
+        font-size: 20px;
     }
-    .social-contact a img{
+    .social-contact a img {
         height: 20px;
     }
-    
-    .social-contact a .fa-mobile-alt{
-        font-size:12px;
+
+    .social-contact a .fa-mobile-alt {
+        font-size: 12px;
     }
-    
-    
-    
+
+
+
     nav {
         height: auto;
         flex-direction: column;
     }
-    
+
     nav ul {
-        border-top:1px solid #334354;
+        border-top: 1px solid #334354;
         height: auto;
-       display:none;
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
     }
-    
-    nav div.logo{
+
+    nav div.logo {
         width: 100%;
-        display:flex;
+        display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    .hamburger-menu{
-        display:inline;
+    .hamburger-menu {
+        display: inline;
     }
-    
-    nav img{
-        margin:0px;
+
+    nav img {
+        margin: 0px;
     }
-    
-    /*footer*/
-    footer{
+
+    .garage-content .row {
         height: auto;
     }
-    footer .col-lg-6{
-        height:auto;
+
+    /*footer*/
+    footer {
+        height: auto;
+    }
+    footer .col-lg-6 {
+        height: auto;
         justify-content: space-around;
     }
-    
-    
-  
+
+
+
 }
 
 /*540px max*/
-@media only screen and (max-width: 540px){
-    .products .uk-card-default{
+
+@media only screen and (max-width: 540px) {
+    .products .uk-card-default {
         flex-direction: column;
     }
 }
