@@ -1050,3 +1050,18 @@ input#green {
 .acordion-price td img{
     width: 200px;
 }
+
+.contact-price{
+    background:#B9A15A;
+    color:#334354;
+}
+.contact-price img{
+    width: 50px;
+}
+.contact-price .fa-phone{
+    transform:rotate(90deg);
+}
+.uk-accordion>li{
+    border-bottom:1px solid #B9A15A;
+    padding-bottom:15px;
+}
