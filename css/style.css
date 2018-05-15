@@ -1044,3 +1044,9 @@ input#green {
     width: 50px;
     position: relative;
 }
+
+/*cennik.html style ----cennik.html*************************************************************************************************/
+
+.acordion-price td img{
+    width: 200px;
+}
