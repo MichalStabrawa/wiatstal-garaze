@@ -843,7 +843,7 @@ svg {
 /*kojce.html*******************************************************kojce.html style*/
 
 .kojec-content .row {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.95)), url(../img/kojce/kojec-dla-psa-z-przodu-500px.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/kojce/kojec-dla-psa-z-przodu-500px-bialy.jpg);
     background-size: cover;
     background-position: center;
     height: 500px;
