@@ -22,9 +22,11 @@ $(document).ready(function () {
     
     /*scroll top button to section noclegi*/
 
+    
 
 
-})
+
+
 
 /*calculator garage function*/
 var cena1 = document.getElementById("test2");
