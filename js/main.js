@@ -72,7 +72,7 @@ function sprawdz() {
 
     var garageHeight = parseFloat(document.getElementById("podwyzszenie").value);
 
-    if (select1 > "2" & select1 < "3" & garageHeight != "0") {
+    if (/*select1 > "2" & select1 < "3" & */garageHeight != "0") {
         garageHeight += 10;
     }
 
@@ -101,9 +101,43 @@ function sprawdz() {
     var divCena = document.getElementById('cenaDiv1');
     divCena.style.display = "block";
 
-    var element = document.getElementById('cenaDiv1');
-    element.scrollIntoView();
+    //var element = document.getElementById('cenaDiv1');
+   // element.scrollIntoView();
 
+    
+   //////// //animation gaarage-
+ var animacja=document.querySelector('#garage-animation').offsetWidth;
+    console.log(animacja + roznicaSzerokosc);
+    
+//width img value
+    var widthGarageValue=parseFloat((select1)-2)/2;
+    console.log("szerokość garazu obrazek"+widthGarageValue);
+    
+   var garageImgWidth= document.getElementById('garage-animation').style.width;
+    garageImgWidth="200px";
+    
+    document.getElementById('garage-animation').style.width=parseInt(garageImgWidth,10)+((parseInt(garageImgWidth,10)*widthGarageValue))+'px';
+    
+    
+//height value img
+   var heightGarage1=document.getElementById('garage-animation').style.height;
+    heightGarage1=parseInt("200px",10);
+   var heightGarageValue=((garageHeight-10)/55)*0.05;
+    
+    
+    console.log("podwyzszenie "+" "+ heightGarageValue);
+    document.getElementById('garage-animation').style.height=heightGarage1+(heightGarage1*heightGarageValue)+"px";
+    
+    
+    /*height value img garage-animation2*/
+     var heightGarage1=document.getElementById('garage-animation2').style.height;
+    heightGarage1=parseInt("200px",10);
+   var heightGarageValue=((garageHeight-10)/55)*0.05;
+    
+    document.getElementById('garage-animation2').style.height=heightGarage1+(heightGarage1*heightGarageValue)+"px";
+    
+
+    
 }
 
 
