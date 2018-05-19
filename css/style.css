@@ -911,8 +911,28 @@ svg {
     border-radius: 3px;
 }
 
+#colorGarage option{
+    border:1px solid #fff;
+    height:30px;
+    background:#9c9c9c;
+    color:#fff;
+}
+
+
 .calculator #colorGarage option:nth-child(2){
- background:red;
+ background:#613c41;
+}
+.calculator #colorGarage option:nth-child(3){
+ background:#653f34;
+    color:#fff;
+}
+.calculator #colorGarage option:nth-child(4){
+    background:#4a4f54;
+    color:#fff;
+}
+.calculator #colorGarage option:nth-child(5){
+    background:#024217;
+    color:#fff;
 }
 
 .calculator .figure-calc {

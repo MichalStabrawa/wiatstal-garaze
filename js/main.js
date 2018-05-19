@@ -137,6 +137,10 @@ function sprawdz() {
     document.getElementById('garage-animation2').style.height=heightGarage1+(heightGarage1*heightGarageValue)+"px";
     
 
+    var colorGarageChange=document.getElementById('colorGarage').value;
+    
+    document.getElementById('garage-animation2').style.background=colorGarageChange;
+    document.getElementById('garage-animation').style.background=colorGarageChange;
     
 }
 
