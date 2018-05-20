@@ -90,8 +90,8 @@ nav {
 }
 
 nav div.logo {
-    padding-top:5px;
-    display:flex;
+    padding-top: 5px;
+    display: flex;
     align-items: center;
 }
 
@@ -102,7 +102,7 @@ nav div.logo {
 nav img {
     width: 70%;
     margin-left: 20px;
-   
+
 }
 
 nav ul {
@@ -152,7 +152,7 @@ header {
     height: 650px;
     background-image: url(../img/garaze/wiatstal-tlo-garaz-blaszany%20.png);
     background-size: cover;
-    background-position:left top;
+    background-position: left top;
 
 }
 
@@ -363,8 +363,8 @@ header {
 
 }
 
-.about .fa-check-circle{
-    color:#b9a15a;
+.about .fa-check-circle {
+    color: #b9a15a;
 }
 
 .about .container-fluid {
@@ -637,7 +637,7 @@ footer p {
     color: #fff;
 }
 
-footer .logo-footer img{
+footer .logo-footer img {
     width: 50%;
 }
 
@@ -918,28 +918,31 @@ svg {
     border-radius: 3px;
 }
 
-#colorGarage option{
-    border:1px solid #fff;
-    height:30px;
-    background:#9c9c9c;
-    color:#fff;
+#colorGarage option {
+    border: 1px solid #fff;
+    height: 30px;
+    background: #9c9c9c;
+    color: #fff;
 }
 
 
-.calculator #colorGarage option:nth-child(2){
- background:#613c41;
+.calculator #colorGarage option:nth-child(2) {
+    background: #613c41;
 }
-.calculator #colorGarage option:nth-child(3){
- background:#653f34;
-    color:#fff;
+
+.calculator #colorGarage option:nth-child(3) {
+    background: #653f34;
+    color: #fff;
 }
-.calculator #colorGarage option:nth-child(4){
-    background:#4a4f54;
-    color:#fff;
+
+.calculator #colorGarage option:nth-child(4) {
+    background: #4a4f54;
+    color: #fff;
 }
-.calculator #colorGarage option:nth-child(5){
-    background:#024217;
-    color:#fff;
+
+.calculator #colorGarage option:nth-child(5) {
+    background: #024217;
+    color: #fff;
 }
 
 .calculator .figure-calc {
@@ -1103,16 +1106,16 @@ button#buy {
     margin-bottom: 0px;
     width: 0;
     height: 0;
-    border-color:linear-gradient( to right,
+    border-color: linear-gradient( to right,
     grey,
     #BFBFBF 10px,
     grey 10px,
     grey 20px);
-     
-    border-bottom: 20px solid ;
-    
+
+    border-bottom: 20px solid;
+
     border-right: 300px solid transparent;
-    
+
 }
 
 
@@ -1251,39 +1254,76 @@ input#green {
     border-bottom: 1px solid #B9A15A;
     padding-bottom: 15px;
 }
+
 /*o Nas.html!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-section.oNas{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/garaze/wiatstal-tlo-garaz-blaszany%20.png);
+section.oNas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/garaze/wiatstal-tlo-garaz-blaszany%20.png);
     background-size: cover;
     background-position: center;
 }
-section.oNas h2{
+
+section.oNas h2 {
     text-align: left;
-    color:#fff;
+    color: #fff;
     width: 100%;
 }
-section.oNas h2::after{
+
+section.oNas h2::after {
     width: 25%;
-    border-color:#fff;
-    margin:0px;
-    margin-top:10px;
+    border-color: #fff;
+    margin: 0px;
+    margin-top: 10px;
 }
 
-section.oNas-content .row:nth-child(1){
-    padding-top:50px;
+section.oNas-content .row:nth-child(1) {
+    padding-top: 50px;
     padding-bottom: 100px;
-    font-size:16px;
+    font-size: 16px;
+    border-bottom: 2px solid #f6f6f6;
 }
 
-section.oNas-content .row:nth-child(1)>.col-lg-6:nth-child(2){
-    padding-top:120px;
+section.oNas-content .row:nth-child(2),
+    {
+    padding-top: 50px;
+
+}
+
+section.oNas-content .row:nth-child(2) h4 {
+    margin-bottom: 50px;
+}
+
+section.oNas-content .row:nth-child(3) {
+    border-bottom: 2px solid #f6f6f6;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+
+
+section.oNas-content .row:nth-child(1) > .col-lg-6:nth-child(2) {
+    padding-top: 120px;
     height: 380px;
-   
+
 }
 
 
 
-section.oNas-content h3{
-    margin-top:0px;
+section.oNas-content h3 {
+    margin-top: 0px;
+}
+
+section.oNas-content .btn-primary {
+
+    background: #B9A15A;
+    height: 60px;
+    padding: 0px;
+    line-height: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0px;
+}
+
+section.oNas-content .btn-primary:hover{
+    opacity:0.9;
+    transition: 0.3s;
 }
