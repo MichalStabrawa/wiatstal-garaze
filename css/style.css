@@ -1268,3 +1268,12 @@ section.oNas h2::after{
     margin:0px;
     margin-top:10px;
 }
+
+section.oNas-content .row:nth-child(1){
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+section.oNas-content h3{
+    margin-top:0px;
+}
