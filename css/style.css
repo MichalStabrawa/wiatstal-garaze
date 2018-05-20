@@ -1250,3 +1250,21 @@ input#green {
     border-bottom: 1px solid #B9A15A;
     padding-bottom: 15px;
 }
+/*o Nas.html!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+section.oNas{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/garaze/wiatstal-tlo-garaz-blaszany%20.png);
+    background-size: cover;
+    background-position: center;
+}
+section.oNas h2{
+    text-align: left;
+    color:#fff;
+    width: 100%;
+}
+section.oNas h2::after{
+    width: 25%;
+    border-color:#fff;
+    margin:0px;
+    margin-top:10px;
+}
