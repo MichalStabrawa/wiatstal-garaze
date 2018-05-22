@@ -1,3 +1,11 @@
+@media only screen and (max-width: 960px){
+    .jumbotron{
+        width:100%;
+    }
+}
+
+
+
 @media only screen and (max-width: 960px) {
 
     h2 {
@@ -35,15 +43,17 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        height: 100px;
     }
     .hamburger-menu {
         display: inline;
     }
 
     nav img {
-        width: 50%;
+        width: 35%;
         margin: 0px;
     }
+   
 
     .garage-content .row {
         height: auto;
@@ -61,6 +71,31 @@
 
 
 }
+
+/*768px*/
+@media screen and (max-width: 768px){
+    
+    .jumbotron{
+        top:50%;
+        width: 100%;
+        margin-left:0px;
+    }
+    .jumbotron h1{
+        font-size:30px;
+    }
+    
+    .jumbotron p{
+        font-size:14px;
+    }
+    .jumbotron .btn-primary{
+        margin-top:10px;
+        font-size:15px;
+        height:35px;
+        line-height:35px;
+    }
+}
+
+
 
 /*540px max*/
 
