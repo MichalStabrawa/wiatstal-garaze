@@ -875,6 +875,15 @@ svg {
      border-top:2px solid #f6f6f6;
 }
 
+#price-button .uk-modal-body{
+    display:flex;
+    flex-direction: column;
+}
+
+#price-button .uk-modal-body label{
+    margin-top:5px;
+}
+
 /*kojce.html*******************************************************kojce.html style*/
 
 .kojec-content .row {
