@@ -274,6 +274,12 @@ header {
     margin: 0px;
     padding: 10px;
     text-align: center;
+    font-size:18px;
+}
+
+.recomended .col-md-3 p{
+    font-size:20px;
+    color:#B9A15A;
 }
 
 
@@ -298,16 +304,21 @@ header {
 }
 
 .mask:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .mask-item {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 95%;
     height: 95%;
     border: 2px solid #fff;
+}
+.recomended .col-md-3 .mask-item p{
+    padding:3px;
+    font-size:12px;
 }
 
 
@@ -623,7 +634,7 @@ footer .col-lg-6 {
 
 footer .col-lg-6:nth-child(1) {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .author {
@@ -645,7 +656,7 @@ footer .logo-footer img {
 }
 
 footer h4 {
-
+text-align: left;
     color: #fff;
     text-shadow: 1px 1px 2px rgba(255, 203, 56, 1);
 }
