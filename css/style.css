@@ -864,6 +864,16 @@ svg {
 .header-site-content-img div.uk-first-column {
     width: 500px;
 }
+.header-site-content-img p{
+    padding-top:10px;
+}
+
+ .ofert-price{
+    color:red;
+    font-size:20px;
+    font-weight:800;
+     border-top:2px solid #f6f6f6;
+}
 
 /*kojce.html*******************************************************kojce.html style*/
 
