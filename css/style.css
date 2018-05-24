@@ -244,6 +244,19 @@ header {
 }
 
 
+/*installation*/
+
+.installation{
+    height: 100px;
+    background-color:#334354;
+    
+}
+
+.installation h3{
+    color:#fff;
+    font-size:30px;
+}
+
 
 
 
