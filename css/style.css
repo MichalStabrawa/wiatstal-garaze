@@ -1,4 +1,5 @@
 body {
+    position: relative;
     box-sizing: border-box;
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
@@ -161,8 +162,8 @@ header {
     width: auto;
     position: absolute;
     top: 30%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: transparent;
     z-index: 10;
     color: #fff;
@@ -183,7 +184,7 @@ header {
 .jumbotron .btn-primary:hover {
     opacity: 0.9;
     background: #fff;
-    color:#000;
+    color: #000;
     transition: 0.3s;
 }
 
@@ -246,15 +247,15 @@ header {
 
 /*installation*/
 
-.installation{
+.installation {
     height: 100px;
-    background-color:#334354;
-    
+    background-color: #334354;
+
 }
 
-.installation h3{
-    color:#fff;
-    font-size:30px;
+.installation h3 {
+    color: #fff;
+    font-size: 30px;
 }
 
 
@@ -287,12 +288,12 @@ header {
     margin: 0px;
     padding: 10px;
     text-align: center;
-    font-size:18px;
+    font-size: 18px;
 }
 
-.recomended .col-md-3 p{
-    font-size:20px;
-    color:#B9A15A;
+.recomended .col-md-3 p {
+    font-size: 20px;
+    color: #B9A15A;
 }
 
 
@@ -329,9 +330,10 @@ header {
     height: 95%;
     border: 2px solid #fff;
 }
-.recomended .col-md-3 .mask-item p{
-    padding:3px;
-    font-size:12px;
+
+.recomended .col-md-3 .mask-item p {
+    padding: 3px;
+    font-size: 12px;
 }
 
 
@@ -669,7 +671,7 @@ footer .logo-footer img {
 }
 
 footer h4 {
-text-align: left;
+    text-align: left;
     color: #fff;
     text-shadow: 1px 1px 2px rgba(255, 203, 56, 1);
 }
@@ -877,24 +879,25 @@ svg {
 .header-site-content-img div.uk-first-column {
     width: 500px;
 }
-.header-site-content-img p{
-    padding-top:10px;
+
+.header-site-content-img p {
+    padding-top: 10px;
 }
 
- .ofert-price{
-    color:red;
-    font-size:20px;
-    font-weight:800;
-     border-top:2px solid #f6f6f6;
+.ofert-price {
+    color: red;
+    font-size: 20px;
+    font-weight: 800;
+    border-top: 2px solid #f6f6f6;
 }
 
-#price-button .uk-modal-body{
-    display:flex;
+#price-button .uk-modal-body {
+    display: flex;
     flex-direction: column;
 }
 
-#price-button .uk-modal-body label{
-    margin-top:5px;
+#price-button .uk-modal-body label {
+    margin-top: 5px;
 }
 
 /*kojce.html*******************************************************kojce.html style*/
@@ -1369,7 +1372,67 @@ section.oNas-content .btn-primary {
     border: 0px;
 }
 
-section.oNas-content .btn-primary:hover{
-    opacity:0.9;
+section.oNas-content .btn-primary:hover {
+    opacity: 0.9;
     transition: 0.3s;
+}
+
+/*modal-new*/
+
+.modal-new {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    position: fixed;
+    top: 0;
+
+
+    height: 100vh;
+
+}
+
+.modal-new .row {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.modal-new .col-lg-6 {
+    background: #fff;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-new label {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.modal-new select {
+    width: 100%;
+    color: #000;
+
+    height: 45px;
+    background: #B9A15A;
+    border-radius: 3px;
+}
+
+.modal-new .button-group {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom:5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-new .button-group button {
+    margin-left: 5px;
+    height: 40px;
+    width: 92px;
+    background: transparent;
+    border: 1px solid #B9A15A;
+    color: #B9A15A;
+    border-radius: 3px;
 }

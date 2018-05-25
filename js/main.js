@@ -6,38 +6,94 @@ $(document).ready(function () {
     $("#test").click(function () {
         $("#figure-spad-tyl").show();
         $("#calc1").show();
-        $('html, body').animate({
-            scrollTop: $('#figure-spad-tyl').offset().top
-        }, 1000);
+      //  $('html, body').animate({
+      //      scrollTop: $('#figure-spad-tyl').offset().top
+       // }, 1000);
 
     })
 
-    $("#btn-header").click(function () {
-        $('html, body').animate({
-            scrollTop: $('#offert1').offset().top
-        }, 1000);
+  //  $("#btn-header").click(function () {
+   ////     $('html, body').animate({
+     //       scrollTop: $('#offert1').offset().top
+     //   }, 1000);
+    // })
+    
+
+
+
+   // $(".target").change(function () {
+
+    //    var wartosc = parseFloat($(this).val());
+
+      //  const pobierzTextTable = $(this).parent().prev().attr('value');
+
+      //  const parsujText = parseFloat(pobierzTextTable);
+
+       // $(this).parent().prev().text(wartosc + parsujText);
+
+
+
+
+
+ //   });
+})
+var tablica=[];
+ 
+    $('.bbb').click(function(){
+       var x=parseFloat($(this).parent().prev().attr('value')); 
+        $(this).parent().prev().css('color:red');
+        $(this).parent().prev().attr('id','tojest');
+        tablica.push(x);
+        console.log(tablica);
+        $(".modal-new").show();
     })
+    
 
+function testuj(){
+    var wartosc1=parseFloat(document.getElementById('s1').value);
+    
+    var pole=document.getElementById('tojest').value;
+    pole=tablica[0];
+    var poleVal=parseFloat(pole);
+    
+    var windowVal=parseFloat(document.getElementById('window-price2').value);
+    
+    var gateValue=parseFloat(document.getElementById('gate-price').value);
+    var transportCountry=parseFloat(document.getElementById('transport-country-price').value);
+    
+    document.getElementById('tojest').innerHTML=(wartosc1+poleVal)+windowVal+transportCountry + gateValue;
+    document.getElementById('tojest').style.color="red";
+   
+   
+    tablica.pop();
+    console.log(tablica);
+    
+   document.getElementById('modal-new-start').style.display="none" ;var idDoc=document.getElementsByTagName('td');
+    
+   for(i=0;i<idDoc.length;i++){
+       idDoc[i].removeAttribute('id','tojest');
+   }
+    
+   
+    
+    
+}
+    
+document.getElementById('save-btn2').addEventListener('click',testuj) ;  
 
-
-    $(".target").change(function () {
-
-        var wartosc = parseFloat($(this).val());
-
-        const pobierzTextTable = $(this).parent().prev().attr('value');
-
-        const parsujText = parseFloat(pobierzTextTable);
-
-        $(this).parent().prev().text(wartosc + parsujText);
-
-
-
-
-
-    });
-
+$('#save-test').click(function(){
+    $('.modal-new').hide();
 })
 
+
+
+
+
+
+    
+   
+
+    
 
 
 
