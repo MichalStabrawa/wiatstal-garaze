@@ -411,6 +411,9 @@ header {
     background-image: url(../img/garaze/wiatstal-tlo-garaz-blaszany%20.png);
     background-position: bottom;
 }
+#test-target2{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/wiatstal-garaze-blaszane-slider-niebo.jpeg);
+}
 
 /*calc garage*/
 
@@ -626,7 +629,7 @@ header {
 footer {
     width: 100%;
     min-height: 402px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/call-center-2275745_1280.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/wiatstal-garaze-blaszane-slider-brazowy.jpeg);
     background-size: cover;
     background-position: center;
 

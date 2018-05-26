@@ -63,6 +63,7 @@ function testuj(){
     
     document.getElementById('tojest').innerHTML=(wartosc1+poleVal)+windowVal+transportCountry + gateValue;
     document.getElementById('tojest').style.color="red";
+    document.getElementById('tojest').style.fontSize="18px";
    
    
     tablica.pop();
