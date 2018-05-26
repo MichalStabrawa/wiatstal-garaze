@@ -1307,6 +1307,20 @@ input#green {
     padding-bottom: 15px;
 }
 
+button.bbb{
+    background: transparent;
+    border:1px solid #334354;
+    border-radius:3px;
+    background: #B9A15A;
+    color:#334354;
+}
+button.bbb i{
+    color:#334354;
+}
+.uk-table th{
+    font-size:1.1rem;
+}
+
 
 
 /*o Nas.html!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -1435,7 +1449,7 @@ section.oNas-content .btn-primary:hover {
 .modal-new .button-group button {
     margin-left: 5px;
     height: 40px;
-    width: 92px;
+    width: 120px;
     background: transparent;
     border: 1px solid #B9A15A;
     color: #B9A15A;

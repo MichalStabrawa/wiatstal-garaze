@@ -12,6 +12,8 @@ function testuj() {
         var gateValue = parseFloat(document.getElementById('gate-price').value);
     var colorValuePrice=parseFloat(document.getElementById('color-garage-value').value);
     
+   
+    
     
         var transportCountry = parseFloat(document.getElementById('transport-country-price').value);
 
