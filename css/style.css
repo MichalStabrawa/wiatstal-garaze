@@ -1307,6 +1307,8 @@ input#green {
     padding-bottom: 15px;
 }
 
+
+
 /*o Nas.html!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 section.oNas {
@@ -1438,4 +1440,13 @@ section.oNas-content .btn-primary:hover {
     border: 1px solid #B9A15A;
     color: #B9A15A;
     border-radius: 3px;
+}
+
+.modal-new .color-box{
+    width: 30px;
+    height: 20px;
+        border:1px solid #000;
+    background:#ccc;
+    display:inline-block;
+    
 }
