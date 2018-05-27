@@ -75,19 +75,19 @@
 /*768px*/
 @media screen and (max-width: 768px){
     
-    .jumbotron{
+    .jumbotron-header{
         top:50%;
         width: 100%;
         margin-left:0px;
     }
-    .jumbotron h1{
+    .jumbotron-header h1{
         font-size:30px;
     }
     
-    .jumbotron p{
+    .jumbotron-header p{
         font-size:14px;
     }
-    .jumbotron .btn-primary{
+    .jumbotron-header .btn-primary{
         margin-top:10px;
         font-size:15px;
         height:35px;
