@@ -525,9 +525,8 @@ header {
 /*contact us*/
 
 .contact-us {
-    background-image: url(../img/contact-us.jpg);
-    background-size: cover;
-    background-position: center;
+   
+   
     height: auto;
     background: #FCFCF7;
 }
