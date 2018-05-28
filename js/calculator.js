@@ -49,11 +49,17 @@
             document.getElementById('price-transport').innerHTML = "TRANSPORT:śląskie"
         }
 
-        var divCena = document.getElementById('cenaDiv1');
-        divCena.style.display = "block";
+       // var divCena = document.getElementById('cenaDiv1');
+     //   divCena.style.display = "block";
+        
+        
+           var priceSubmitShow= document.getElementById('priceSubmit')
+       priceSubmitShow.style.display="block";
 
-        //var element = document.getElementById('cenaDiv1');
-        // element.scrollIntoView();
+       var element = document.getElementById('priceSubmit');
+         element.scrollIntoView();
+        
+    
 
 
         //////// //animation gaarage-
@@ -97,4 +103,37 @@
 
 
 
-    document.getElementById('show-price-now').addEventListener('click', sprawdz);
+  document.getElementById('show-price-now').addEventListener('click', sprawdz);
+
+function priceSend(){
+    var longVal=document.getElementById('dlugosc').value;
+    var widthVal=document.getElementById('szerokosc').value;
+    
+    var heightValPrice=document.getElementById('podwyzszenie').value;
+    var priceSubmitOne=document.getElementById('inputOne');
+    var priceSubmitTwo=document.getElementById('inputTwo');
+    var priceSubmitThree=document.getElementById('inputThree');
+    
+    
+    
+    priceSubmitOne.value=longVal+"m";
+    priceSubmitTwo.value=widthVal+"m"
+   
+    if(heightValPrice=="0"){
+         priceSubmitThree.value="0"+"cm";
+    }else if(heightValPrice=="55"){
+        priceSubmitThree.value="10"+"cm";
+    }else if(heightValPrice=="110"){
+        priceSubmitThree.value="20"+"cm";
+    }else if(heightValPrice=="165"){
+        priceSubmitThree.value="30"+"cm";
+    }else if(heightValPrice=="220"){
+        priceSubmitThree.value="40"+"cm";
+    }else if(heightValPrice=="275"){
+        priceSubmitThree.value="50"+"cm";
+    }
+   
+    
+    
+}
+document.getElementById('show-price-now').addEventListener('click',priceSend);

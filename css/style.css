@@ -1019,6 +1019,43 @@ svg {
     padding-bottom: 40px;
 
 }
+.calculator #priceSubmit form div.col-lg-6,.calculator #priceSubmit form div.col-lg-3{
+  display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.calculator #priceSubmit form{
+    background:#f5f5f5;
+    padding:15px;
+   
+}
+.calculator #priceSubmit form .inputSubmit,.calculator #priceSubmit form textarea{
+    height: 45px;
+    border:1px solid #334354;
+    background:#B9A15A;
+}
+.calculator #priceSubmit form textarea{
+    height:90px;
+}
+.calculator #priceSubmit form input[type="submit"]{
+    height:45px;
+    margin-top:29px;
+    background:#334354;
+    border:1px solid #B9A15A;
+    color:#B9A15A;
+}
+.calculator #priceSubmit form .inputPrice{
+   
+    height: 45px;
+    border:0px;
+    border-bottom:1px solid #B9A15A;
+    
+   
+}
+
+#priceSubmit{
+    display:none;
+}
 
 /*figure-calc*/
 

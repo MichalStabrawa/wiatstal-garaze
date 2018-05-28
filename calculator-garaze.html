@@ -61,11 +61,11 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 " id="col-figure">
-                   
-                        <figure id="test"><img src="img/ikony/spad_w_tyl.png" alt="">
-                            <figcaption>spad w tył</figcaption>
-                        </figure>
-                
+
+                    <figure id="test"><img src="img/ikony/spad_w_tyl.png" alt="">
+                        <figcaption>spad w tył</figcaption>
+                    </figure>
+
                     <figure><img src="img/ikony/dwuspadowy.png" alt="">
                         <figcaption>dwuspadowy</figcaption>
                     </figure>
@@ -113,85 +113,126 @@
            <option value="6.5">6.5m</option>
            <option value="7">7m</option>
            <option value="7.5">7.5m</option></select>
-            
-            <label for="">Podwyższenie</label>
-            
-            <select name="" id="podwyzszenie"><option value="0">0cm</option>
+
+                    <label for="">Podwyższenie</label>
+
+                    <select name="" id="podwyzszenie"><option value="0">0cm</option>
             <option value="55">10cm</option>
             <option value="110">20cm</option>
             <option value="165">30cm</option>
             <option value="220">40cm</option>
             <option value="275">50cm</option></select>
-            
-            <label for="">Drzwi</label>
-            <select name="door" id="door"><option value="0">brak</option>
+
+                    <label for="">Drzwi</label>
+                    <select name="door" id="door"><option value="0">brak</option>
             <option value="150">1szt</option>
             <option value="300">2szt</option></select>
-            
-            <label for="">Otwór okienny</label>
-            <select name="okno" id="window-price">
+
+                    <label for="">Otwór okienny</label>
+                    <select name="okno" id="window-price">
                 <option value="0">brak</option>
                 <option value="150">1szt</option>
                 <option value="300">2szt</option>
                 <option value="450">3szt</option>
             </select>
-            
-            <label for="">Kolor</label>
-            <select name="" id="colorGarage">
+
+                    <label for="">Kolor</label>
+                    <select name="" id="colorGarage">
                 <option value="#9c9c9c">ocynk podstawowy</option>
                 <option value="#613c41">ciemna wiśnia</option>
                 <option value="#653f34">ciemny brąz</option>
                 <option value="#4a4f54">grafit</option>
                 <option value="#024217">zielony</option>
             </select>
-            
-       
-             
-             <label for="">Województwo</label>
-             <select  id="transport"><option value="0" name="małopolskie" data="malopolskie">małopolskie</option>
+
+
+
+                    <label for="">Województwo</label>
+                    <select id="transport"><option value="0" name="małopolskie" data="malopolskie">małopolskie</option>
              <option value="50" name="śląskie" data="slask">śląskie</option>
              <option value="50">podkarpackie</option>
              <option value="100">dolnośląskie</option>
              <option value="100">lubuskie</option></select>
-              <button class="show-price" id="show-price-now">SPRAWDZ CENE</button><br>
-               
-               
-               
-               
+                    <button class="show-price" id="show-price-now">SPRAWDZ CENE</button><br>
+
+
+
+
                 </div>
-                
-                
+
+
                 <div class="col-lg-8">
-                   
-                    <div class="row"><div class="col-lg-12"> <div class="standard" id="garage-animation"><div class="gate"></div></div>
-                    </div></div>
-                    
+
                     <div class="row">
                         <div class="col-lg-12">
-                           <div class="triangle-bottomleft"></div>
-                            <div class="standard2" id="garage-animation2">
-                                
+                            <div class="standard" id="garage-animation">
+                                <div class="gate"></div>
                             </div>
                         </div>
                     </div>
-                   
-                    
-                    
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="triangle-bottomleft"></div>
+                            <div class="standard2" id="garage-animation2">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
 
                 </div>
             </div>
-            
+
             <div class="row cena" id="cenaDiv1">
                 <div class="col-lg-6 col-md-6">
-                   <h4>PODSUMOWANIE</h4>
+                    <h4>PODSUMOWANIE</h4>
                     <h3><span class="price-garage" id="test2">CENA:</span></h3>
                 </div>
-                <div class="col-lg-3 col-md-3"><h4>Wymiary:</h4><h5 id="price-szer"></h5>
-                <h5 id="price-wys"></h5></div>
-                
+                <div class="col-lg-3 col-md-3">
+                    <h4>Wymiary:</h4>
+                    <h5 id="price-szer"></h5>
+                    <h5 id="price-wys"></h5>
+                </div>
+
                 <div class="col-lg-3 col-md-3">
                     <h4 id="price-transport"></h4>
                     <button id="buy">ZAMÓW</button>
+                </div>
+            </div>
+
+            <div class="row" id="priceSubmit">
+                <div class="col-lg-12">
+                   <h3>ZAPYTAJ O WYCENĘ</h3>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-3"> <label for="">długość</label> <input type="text" class="inputPrice" value="" id="inputOne" disabled>
+                                <label for="">szerokość</label> <input type="text" class="inputPrice" id="inputTwo">
+                                <label for="">podwyższenie</label> <input type="text" class="inputPrice" id="inputThree">
+                                <label for="">drzwi</label> <input type="text" class="inputPrice">
+                            </div>
+                            <div class="col-lg-3">
+                                <label for="">otwór okienny</label><input type="text" class="inputPrice">
+                                <label for="">brama</label>
+                                <input type="text" class="inputPrice">
+                                <label for="">kolor</label> <input type="text" class="inputPrice">
+                                <label for="">województwo</label> <input type="text" class="inputPrice">
+                            </div>
+                            <div class="col-lg-6"><label for="">imie</label> <input type="text" placeholder="imie" class="inputSubmit"><label for="">email</label>
+                                <input type="email" placeholder="email" class="inputSubmit"><label for="">telefon</label>
+                                <input type="text" placeholder="telefon" class="inputSubmit">
+                                <label for="">wiadomość</label>
+                                <textarea name="" id="message-price" placeholder="wiadomosc"></textarea>
+                                <input type="submit" value="wyślij">
+                                <input type="checkbox" required>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe hic reiciendis placeat earum mollitia dicta tempore voluptate ipsum provident nisi ad ratione officia, nihil, perspiciatis delectus magnam ab. Aliquid, omnis!
+                                </div>
+                        </div>
+
+
+
+                    </form>
                 </div>
             </div>
         </div>
