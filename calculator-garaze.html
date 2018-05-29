@@ -124,25 +124,29 @@
             <option value="275">50cm</option></select>
 
                     <label for="">Drzwi</label>
-                    <select name="door" id="door"><option value="0">brak</option>
-            <option value="150">1szt</option>
-            <option value="300">2szt</option></select>
+                    <select name="door" id="door"><option data="brak" value="0">brak</option>
+            <option data="1szt" value="150">1szt</option>
+            <option data="2szt" value="300">2szt</option></select>
 
                     <label for="">Otwór okienny</label>
                     <select name="okno" id="window-price">
-                <option value="0">brak</option>
-                <option value="150">1szt</option>
-                <option value="300">2szt</option>
-                <option value="450">3szt</option>
+                <option data="brak" value="0">brak</option>
+                <option data="1szt" value="150">1szt</option>
+                <option data="2szt" value="300">2szt</option>
+                <option data="3szt" value="450">3szt</option>
             </select>
+                    
+                    <label for="">Brama</label>
+                    <select name="brama-rodzaj" id="gate-change-date"><option data="dwuskrzydłowa" value="0">dwuskrzydłowa</option>
+                    <option data="uchylna" value="300">uchylna</option></select>
 
                     <label for="">Kolor</label>
                     <select name="" id="colorGarage">
-                <option value="#9c9c9c">ocynk podstawowy</option>
-                <option value="#613c41">ciemna wiśnia</option>
-                <option value="#653f34">ciemny brąz</option>
-                <option value="#4a4f54">grafit</option>
-                <option value="#024217">zielony</option>
+                <option data="ocynk" value="#9c9c9c">ocynk podstawowy</option>
+                <option data="ciemna-wiśnia" value="#613c41">ciemna wiśnia</option>
+                <option data="ciemny-brąz" value="#653f34">ciemny brąz</option>
+                <option data="grafit" value="#4a4f54">grafit</option>
+                <option data="zielony" value="#024217">zielony</option>
             </select>
 
 
@@ -150,9 +154,9 @@
                     <label for="">Województwo</label>
                     <select id="transport"><option value="0" name="małopolskie" data="malopolskie">małopolskie</option>
              <option value="50" name="śląskie" data="slask">śląskie</option>
-             <option value="50">podkarpackie</option>
-             <option value="100">dolnośląskie</option>
-             <option value="100">lubuskie</option></select>
+             <option data="podkarpackie" value="50" >podkarpackie</option>
+             <option data="dolnośląskie" value="100">dolnośląskie</option>
+             <option data="lubuskie" value="100">lubuskie</option></select>
                     <button class="show-price" id="show-price-now">SPRAWDZ CENE</button><br>
 
 
@@ -211,14 +215,14 @@
                             <div class="col-lg-3"> <label for="">długość</label> <input type="text" class="inputPrice" value="" id="inputOne" disabled>
                                 <label for="">szerokość</label> <input type="text" class="inputPrice" id="inputTwo">
                                 <label for="">podwyższenie</label> <input type="text" class="inputPrice" id="inputThree">
-                                <label for="">drzwi</label> <input type="text" class="inputPrice">
+                                <label for="">drzwi</label> <input type="text" class="inputPrice" id="inputFour">
                             </div>
                             <div class="col-lg-3">
-                                <label for="">otwór okienny</label><input type="text" class="inputPrice">
+                                <label for="">otwór okienny</label><input type="text" class="inputPrice" id="inputFive">
                                 <label for="">brama</label>
-                                <input type="text" class="inputPrice">
-                                <label for="">kolor</label> <input type="text" class="inputPrice">
-                                <label for="">województwo</label> <input type="text" class="inputPrice">
+                                <input type="text" class="inputPrice" id="inputSix">
+                                <label for="">kolor</label> <input type="text" class="inputPrice" id="inputSeven">
+                                <label for="">województwo</label> <input type="text" class="inputPrice" id="inputEight">
                             </div>
                             <div class="col-lg-6"><label for="">imie</label> <input type="text" placeholder="imie" class="inputSubmit"><label for="">email</label>
                                 <input type="email" placeholder="email" class="inputSubmit"><label for="">telefon</label>

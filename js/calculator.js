@@ -49,17 +49,17 @@
             document.getElementById('price-transport').innerHTML = "TRANSPORT:śląskie"
         }
 
-       // var divCena = document.getElementById('cenaDiv1');
-     //   divCena.style.display = "block";
-        
-        
-           var priceSubmitShow= document.getElementById('priceSubmit')
-       priceSubmitShow.style.display="block";
+        // var divCena = document.getElementById('cenaDiv1');
+        //   divCena.style.display = "block";
 
-       var element = document.getElementById('priceSubmit');
-         element.scrollIntoView();
-        
-    
+
+        var priceSubmitShow = document.getElementById('priceSubmit')
+        priceSubmitShow.style.display = "block";
+
+        var element = document.getElementById('priceSubmit');
+        element.scrollIntoView();
+
+
 
 
         //////// //animation gaarage-
@@ -103,37 +103,144 @@
 
 
 
-  document.getElementById('show-price-now').addEventListener('click', sprawdz);
+    document.getElementById('show-price-now').addEventListener('click', sprawdz);
 
-function priceSend(){
-    var longVal=document.getElementById('dlugosc').value;
-    var widthVal=document.getElementById('szerokosc').value;
-    
-    var heightValPrice=document.getElementById('podwyzszenie').value;
-    var priceSubmitOne=document.getElementById('inputOne');
-    var priceSubmitTwo=document.getElementById('inputTwo');
-    var priceSubmitThree=document.getElementById('inputThree');
-    
-    
-    
-    priceSubmitOne.value=longVal+"m";
-    priceSubmitTwo.value=widthVal+"m"
-   
-    if(heightValPrice=="0"){
-         priceSubmitThree.value="0"+"cm";
-    }else if(heightValPrice=="55"){
-        priceSubmitThree.value="10"+"cm";
-    }else if(heightValPrice=="110"){
-        priceSubmitThree.value="20"+"cm";
-    }else if(heightValPrice=="165"){
-        priceSubmitThree.value="30"+"cm";
-    }else if(heightValPrice=="220"){
-        priceSubmitThree.value="40"+"cm";
-    }else if(heightValPrice=="275"){
-        priceSubmitThree.value="50"+"cm";
+
+    /*functio priceSend*/
+    function priceSend() {
+
+        const objectDoor = {
+            valZero: "brak",
+            valOne: "1szt",
+            valTwo: "2szt",
+            valThree: "3szt",
+
+        }
+
+
+        var longVal = document.getElementById('dlugosc').value;
+        var widthVal = document.getElementById('szerokosc').value;
+        var heightValPrice = document.getElementById('podwyzszenie').value;
+        // var doorValPrice = document.getElementById('door').value;
+        //  var windowValPrice=document.getElementById('window-price').value;
+
+        //
+        var priceSubmitOne = document.getElementById('inputOne');
+        var priceSubmitTwo = document.getElementById('inputTwo');
+        var priceSubmitThree = document.getElementById('inputThree');
+        var priceSubmitFour = document.getElementById('inputFour');
+        var priceSubmitFive = document.getElementById('inputFive');
+        var priceSubmitSix = document.getElementById('inputSix');
+        var priceSubmitSeven = document.getElementById('inputSeven');
+        var priceSubmitEight=document.getElementById('inputEight');
+
+        priceSubmitOne.value = longVal + "m";
+        priceSubmitTwo.value = widthVal + "m"
+
+        if (heightValPrice == "0") {
+            priceSubmitThree.value = "0" + "cm";
+        } else if (heightValPrice == "55") {
+            priceSubmitThree.value = "10" + "cm";
+        } else if (heightValPrice == "110") {
+            priceSubmitThree.value = "20" + "cm";
+        } else if (heightValPrice == "165") {
+            priceSubmitThree.value = "30" + "cm";
+        } else if (heightValPrice == "220") {
+            priceSubmitThree.value = "40" + "cm";
+        } else if (heightValPrice == "275") {
+            priceSubmitThree.value = "50" + "cm";
+        }
+
+
+        //  if(doorValPrice=="0"){
+        //    priceSubmitFour.value=objectDoor.valZero;
+        // }else if(doorValPrice=="150"){
+        //    priceSubmitFour.value=objectDoor.valOne;
+        // }else if(doorValPrice="300"){
+        //     priceSubmitFour.value=objectDoor.valTwo;
+        // }
+        if (arrayDor.length == 0) {
+            priceSubmitFour.value = "brak"
+        } else {
+            for (i = 0; i < arrayDor.length; i++) {
+                priceSubmitFour.value = arrayDor[i];
+            }
+        }
+
+        if (arrayWindow.length == 0) {
+            priceSubmitFive.value = "brak"
+        } else {
+            for (i = 0; i < arrayWindow.length; i++) {
+                priceSubmitFive.value = arrayWindow[i];
+
+            }
+
+        }
+
+        if (arrayGateShow.length == 0) {
+            priceSubmitSix.value = "dwuskrzydłowa";
+        } else {
+            for (i = 0; i < arrayGateShow.length; i++) {
+                priceSubmitSix.value = arrayGateShow[i];
+            }
+        }
+
+        if (arrayColor.length == 0) {
+            priceSubmitSeven.value = "ocynk";
+        } else {
+            for (i = 0; i < arrayColor.length; i++) {
+                priceSubmitSeven.value = arrayColor[i];
+            }
+        }
+        
+        if(arrayTransport.lenght == 0){
+            priceSubmitEight.value = "małopolskie";
+        }else{
+            for(i=0;i<arrayTransport.length;i++){
+                priceSubmitEight.value = arrayTransport[i];
+            }
+        }
+
+
+
     }
-   
-    
-    
-}
-document.getElementById('show-price-now').addEventListener('click',priceSend);
+    document.getElementById('show-price-now').addEventListener('click', priceSend);
+
+    //array data
+
+    var arrayDor = [];
+    var arrayWindow = [];
+    var arrayGateShow = [];
+    var arrayColor = [];
+var arrayTransport=[];
+
+    document.getElementById('door').addEventListener('change', function () {
+        arrayDor.pop(arrayDor[0]);
+        arrayDor.push(this.options[this.selectedIndex].getAttribute('data'));
+
+
+    })
+
+    document.getElementById('window-price').addEventListener('change', function () {
+        arrayWindow.pop(arrayWindow[0]);
+        arrayWindow.push(this.options[this.selectedIndex].getAttribute('data'));
+
+    });
+
+    document.getElementById('gate-change-date').addEventListener('change', function () {
+        arrayGateShow.pop(arrayGateShow[0]);
+
+        arrayGateShow.push(this.options[this.selectedIndex].getAttribute('data'));
+
+    })
+
+    document.getElementById('colorGarage').addEventListener('change', function () {
+        arrayColor.pop(arrayColor[0]);
+        arrayColor.push(this.options[this.selectedIndex].getAttribute('data'));
+    })
+
+document.getElementById('transport').addEventListener('change',function(){
+    arrayTransport.pop(arrayTransport[0]);
+    arrayTransport.push(this.options[this.selectedIndex].getAttribute('data'));
+    console.log(arrayTransport);
+})
