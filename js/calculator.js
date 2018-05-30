@@ -193,10 +193,10 @@
             }
         }
         
-        if(arrayTransport.lenght == 0){
+        if(arrayTransport.length == 0){
             priceSubmitEight.value = "małopolskie";
         }else{
-            for(i=0;i<arrayTransport.length;i++){
+            for(i=0; i<arrayTransport.length; i++){
                 priceSubmitEight.value = arrayTransport[i];
             }
         }
