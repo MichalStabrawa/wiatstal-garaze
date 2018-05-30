@@ -8,9 +8,9 @@ $(document).ready(function () {
     $("#test").click(function () {
         //$("#figure-spad-tyl").show();
         $("#calc1").show();
-        //  $('html, body').animate({
-        //      scrollTop: $('#figure-spad-tyl').offset().top
-        // }, 1000);
+       $('html, body').animate({
+             scrollTop: $('#calc1').offset().top
+      }, 1000);
 
     })
 
