@@ -5,8 +5,12 @@ $(document).ready(function () {
         $('.menu-navbar').toggle();
     })
 
-    $("#test").click(function () {
+    $(".test").click(function () {
         //$("#figure-spad-tyl").show();
+        var eachGarage=$(this).attr('data');
+        garageType.pop([0]);
+        garageType.push(eachGarage);
+        console.log(garageType);
         $("#calc1").show();
        $('html, body').animate({
              scrollTop: $('#calc1').offset().top

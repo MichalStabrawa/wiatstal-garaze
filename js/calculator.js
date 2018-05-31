@@ -1,5 +1,7 @@
     var cena1 = document.getElementById("test2");
 
+var garageType=[];
+
     function sprawdz() {
 
 
@@ -133,6 +135,8 @@
         var priceSubmitSix = document.getElementById('inputSix');
         var priceSubmitSeven = document.getElementById('inputSeven');
         var priceSubmitEight=document.getElementById('inputEight');
+        var priceSubmitNine=document.getElementById('inputNine');
+        
 
         priceSubmitOne.value = longVal + "m";
         priceSubmitTwo.value = widthVal + "m"
@@ -200,6 +204,8 @@
                 priceSubmitEight.value = arrayTransport[i];
             }
         }
+        
+        priceSubmitNine.value=garageType;
 
 
 
