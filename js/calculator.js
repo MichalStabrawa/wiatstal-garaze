@@ -250,3 +250,18 @@ document.getElementById('transport').addEventListener('change',function(){
     arrayTransport.push(this.options[this.selectedIndex].getAttribute('data'));
     console.log(arrayTransport);
 })
+
+
+/*calculator DogHouse*/
+
+function dogPriceHouse(){
+    var floorPrice=parseFloat(document.getElementById('floor').value);
+    var dogBowlPrice=parseFloat(document.getElementById('dogBowl').value);
+    var colorDogPrice=parseFloat(document.getElementById('colorDog').value);
+    
+   var showPriceDog= document.getElementById('priceDogEnd');
+    
+    showPriceDog.innerHTML=floorPrice;
+}
+
+document.getElementById('priceDogEnd').addEventListener('click',dogPriceHouse)

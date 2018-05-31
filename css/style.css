@@ -752,14 +752,20 @@ footer h4 {
     background-position: top;
 }
 
-.header-site h3 {
-    height: 100px;
+.header-site h2 {
+color:#fff;
+    text-align: left;
+    margin:0px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    width: 100%;
+    
+}
+.header-site h2::after{
+   border-color:#fff;
     margin: 0px;
-    padding: 0px;
-    line-height: 100px;
-    color: #fff;
-    border-bottom: 2px solid #f6f6f6;
-    padding-bottom: 5px;
+    margin-top:10px;
+  
 }
 
 .gallery {
@@ -985,6 +991,15 @@ svg {
 
 .calculator-title h2 {
     color: #fff;
+    margin:0px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.calculator-title h2::after{
+    border-color:#fff;
+   width: 100%;
+    
 }
 
 .calculator #col-figure {
@@ -1265,6 +1280,16 @@ button#buy {
 
 .contact h2 {
     color: #fff;
+    text-align: left;
+    margin:0px;
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+.contact h2::after{
+    border-color:#fff;
+    text-align: left;
+    width: 100%;
+    
 }
 
 .address-company {
