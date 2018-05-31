@@ -27,21 +27,22 @@ $(document).ready(function () {
 
 
 
-    // $(".target").change(function () {
+     $(".target").change(function () {
 
-    //    var wartosc = parseFloat($(this).val());
+       var wartosc = parseFloat($(this).val());
 
-    //  const pobierzTextTable = $(this).parent().prev().attr('value');
+      const pobierzTextTable = $(this).parent().prev().attr('value');
 
-    //  const parsujText = parseFloat(pobierzTextTable);
+      const parsujText = parseFloat(pobierzTextTable);
 
-    // $(this).parent().prev().text(wartosc + parsujText);
-
-
+    $(this).parent().prev().text(wartosc + parsujText+"zł");
 
 
 
-    //   });
+
+
+      });
+
     /*calculator garage function*/
 
 

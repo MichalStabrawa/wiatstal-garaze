@@ -10,7 +10,7 @@ function dogPriceHouse(){
     
    var showPriceDog= document.getElementById('priceDogEnd');
     
-    showPriceDog.innerHTML="CENA"+":"+(780+floorPrice+dogBowlPrice+colorDogPrice+transportDogPrice)+"zł";
+    showPriceDog.innerHTML="CENA"+":"+(899+floorPrice+dogBowlPrice+colorDogPrice+transportDogPrice)+"zł";
     
    if(arrayDogTransport.length==0) {document.getElementById('priceDogText').innerHTML="Dostawa woj. małopolskie";}else{
        document.getElementById('priceDogText').innerHTML="Dostawa woj."+" "+ arrayDogTransport[0];
