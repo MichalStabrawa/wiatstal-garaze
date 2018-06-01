@@ -1534,7 +1534,7 @@ section.oNas-content .btn-primary:hover {
     top: 0;
 
 
-    height: auto;
+    height: 100vh;
 
 }
 
@@ -1542,7 +1542,7 @@ section.oNas-content .btn-primary:hover {
     height: auto;
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 20px;
 }
 
 .modal-new .col-lg-6 {
