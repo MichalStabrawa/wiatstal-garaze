@@ -33,6 +33,20 @@ var garageType=[];
 
         var doorValue = parseFloat(document.getElementById('door').value);
         //window variables
+        
+        var doorValueShow=document.getElementById('door').value;
+        var doorShowNow=document.getElementById('door-new-show');
+        if(doorValueShow>="150"){
+            
+            doorShowNow.style.display= "block";
+        }
+        
+        var windowValueShow=document.getElementById("window-price").value;
+        var  windowShowNow=document.getElementById("window-new-show");
+        if(windowValueShow>=150){
+            windowShowNow.style.display= "block";
+        }
+        
         windowValue = parseFloat(document.getElementById('window-price').value);
 
 
@@ -94,6 +108,16 @@ var garageType=[];
         var heightGarageValue = ((garageHeight - 10) / 55) * 0.05;
 
         document.getElementById('garage-animation2').style.height = heightGarage1 + (heightGarage1 * heightGarageValue) + "px";
+        
+        
+        var stringBorder=""
+        var widthGarage1=document.getElementById('garage-animation2').style.width;
+        widthGarage1 =parseInt("300px",10);
+        var widthGarage1Value = parseFloat((select2) - 3) / 3;
+        console.log("Dlugosc testowa:"+widthGarage1Value);
+        
+        document.getElementById('garage-animation2').style.width=widthGarage1+(widthGarage1*widthGarage1Value)+ "px";
+      
 
 
         var colorGarageChange = document.getElementById('colorGarage').value;

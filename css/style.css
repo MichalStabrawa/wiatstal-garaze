@@ -1257,6 +1257,7 @@ button#buy {
 }
 
 .standard2 {
+    position: relative;
     margin-top: 0px;
     width: 300px;
     height: 200px;
@@ -1266,6 +1267,30 @@ button#buy {
     #BFBFBF 10px,
     grey 10px,
     grey 20px);
+}
+
+.door-new{
+    position: absolute;
+    z-index:10;
+    height: 170px;
+    width: 80px;
+    background: grey;
+    bottom: 0;
+    left:10%;
+    border:1px solid #000;
+    display:none;
+}
+
+.window-new{
+    position: absolute;
+    z-index: 10;
+    height: 50px;
+    width: 80px;
+    background: grey;
+    top:30px;
+    right: 10%;
+    border:1px solid #000;
+    display:none;
 }
 
 
