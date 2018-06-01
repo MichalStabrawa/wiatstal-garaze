@@ -117,6 +117,16 @@ var garageType=[];
         console.log("Dlugosc testowa:"+widthGarage1Value);
         
         document.getElementById('garage-animation2').style.width=widthGarage1+(widthGarage1*widthGarage1Value)+ "px";
+        
+        var gateShowValue=document.getElementById("gate-change-date").value;
+        
+        if(gateShowValue=="300"){
+            document.getElementById("gate2show").style.display= "block";
+            document.getElementById("gate1show").style.display="none";
+        }else{
+            document.getElementById("gate2show").style.display= "none";
+            document.getElementById("gate1show").style.display="block";
+        }
       
 
 

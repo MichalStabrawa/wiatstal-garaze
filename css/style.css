@@ -1251,10 +1251,49 @@ button#buy {
 
 }
 
-.standard:hover {
-    width: 250px;
-    transition: 0.3s;
+.standard .gate2{
+        width: 200px;
+    height: 190px;
+    border: 1px solid #000;
+
+
+    background: repeating-linear-gradient( to top,
+    grey,
+    #BFBFBF 10px,
+    grey 10px,
+    grey 20px);
+    display:none;
 }
+
+.standard .gate2 span{
+    display:block;
+    width: 12px;
+    border:2px solid #000;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:60%;
+ 
+}
+
+.standard .gate2::before{
+    content: "";
+    width: 105%;
+    height: 5px;
+    display: block;
+    border: 1px solid grey;
+    text-align: center;
+    position: absolute;
+    top: -1%;
+    left: -2.5%;
+
+    background: repeating-linear-gradient( to bottom,
+    grey,
+    #BFBFBF 10px,
+    grey 10px,
+    grey 20px);
+}
+
+
 
 .standard2 {
     position: relative;
@@ -1267,6 +1306,11 @@ button#buy {
     #BFBFBF 10px,
     grey 10px,
     grey 20px);
+}
+.wrapper-gate{
+   
+    width: 300px;
+    height: 200px; 
 }
 
 .door-new{
