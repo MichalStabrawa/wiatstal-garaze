@@ -120,6 +120,9 @@
         height: 30px;
 
     }
+    .footer-hour{
+        width:100%;
+    }
     .kojec-content .row {
         height: auto;
     }
