@@ -96,13 +96,13 @@
         height: 35px;
         line-height: 35px;
     }
-    .contact-us form input{
+    .contact-us form input {
         width: 100%;
     }
-    .contact-us form textarea{
-        width:100%;
+    .contact-us form textarea {
+        width: 100%;
     }
-    .contact-us .footer-checkbox{
+    .contact-us .footer-checkbox {
         width: 100%;
     }
     .modal-new .row {
@@ -115,7 +115,7 @@
         height: 30px;
 
     }
-    .kojec-content .row{
+    .kojec-content .row {
         height: auto;
     }
 }
