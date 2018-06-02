@@ -881,11 +881,11 @@ body > section.products > div > div:nth-child(2) > div > div > div > a.uk-positi
 }
 
 
-body > section.products > div > div:nth-child(2) > div > div > div > ul > li.uk-active > div > div.uk-card-body > button {
+/*body > section.products > div > div:nth-child(2) > div > div > div > ul > li.uk-active > div > div.uk-card-body > button {
     color: #fff;
     background: red;
     border-radius: 5px;
-}
+}*/
 
 svg {
     background: grey;
@@ -905,6 +905,16 @@ svg {
 .uk-tile-secondary:not(.uk-preserve-color) .uk-button-default {
     background: red;
     border-radius: 5px;
+}
+
+.btn-slider{
+    height: 45px;
+    border:0px;
+    border-radius:3px;
+    width: 157px;
+    font-size:13px;
+ background-color:#B9A15A;
+    color:#334354;
 }
 
 /*garaze.html style******************************************************88
@@ -1606,10 +1616,17 @@ section.oNas-content .btn-primary:hover {
     display: none;
     position: fixed;
     top: 0;
-
+z-index:1000;
 
     height: 100vh;
 
+}
+
+.modal-new input[type="text"]{
+    width: 100%;
+    height: 45px;
+    border:1px solid #B9A15A;
+    border-radius:3px;
 }
 
 .modal-new .row {
