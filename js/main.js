@@ -70,6 +70,10 @@ $(document).ready(function () {
     $('#save-test').click(function () {
         $('.modal-new').hide();
     })
+    
+    $('.btn-slider').click(function(){
+        $('.modal-new').show()
+    })
  
 $('#color-garage-value ').change(function(){
   
