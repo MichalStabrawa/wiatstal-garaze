@@ -1238,6 +1238,7 @@ button#buy {
 
 .standard .gateBis {
     display:none;
+    margin-right:3px;
 }
 
 .standard .gate::before {
