@@ -1220,7 +1220,7 @@ button#buy {
 
 }
 
-.standard .gate {
+.standard .gate,.standard .gateBis {
 
     width: 200px;
     height: 190px;
@@ -1234,6 +1234,10 @@ button#buy {
     grey 20px);
 
 
+}
+
+.standard .gateBis {
+    display:none;
 }
 
 .standard .gate::before {
@@ -1254,7 +1258,7 @@ button#buy {
     grey 20px);
 }
 
-.standard .gate::after {
+.standard .gate::after,.standard .gateBis::after {
     content: "";
     height: 100%;
     width: 1px;

@@ -6,6 +6,17 @@ var garageType=[];
 
 
         var select1 = document.getElementById('szerokosc').value;
+        
+        if(select1>="5"){
+            document.getElementById('gateBisShow').style.display ="block";
+             document.getElementById('gateBisShow').style.width ="250px";
+            document.getElementById('gate1show').style.width="250px";
+            
+            document.getElementById('gate2show').style.width="250px";
+        }else{
+             document.getElementById('gateBisShow').style.display ="none";
+            document.getElementById('gateBisShow').style.width ="200px";
+        }
 
         console.log(select1 + "szerokosc");
         var select2 = document.getElementById('dlugosc').value;
