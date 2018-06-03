@@ -84,7 +84,13 @@
                 </div>
             </div>
             <div class=" row " id="calc1">
-                <div class="col-lg-4"><label for="">Dlugosc(m)</label><select name="" id="dlugosc">
+                <div class="col-lg-4">
+                <label for="">Kraj dostawy</label>
+                <select name="" id="country"><option value="1">Polska</option>
+                <option value="2">Słowacja</option>
+                <option value="3">Węgry</option>
+                <option value="4">Litwa</option></select>
+                <label for="">Dlugosc(m)</label><select name="" id="dlugosc">
            <option value="3">3m</option>
            <option value="3.5">3.5m</option>
            <option value="4">4.0m</option>
@@ -96,6 +102,7 @@
            <option value="6.5">6.5m</option>
            <option value="7">7m</option>
            <option value="7.5">7.5m</option></select>
+                    
 
                     <label for="">Szerokosc(m)</label><select name="" id="szerokosc">
                     <option value="2">2m</option>
@@ -148,8 +155,8 @@
 
 
 
-                    <label for="">Województwo</label>
-                    <select id="transport"><option value="0" name="małopolskie" data="malopolskie">małopolskie</option>
+                    <label for="" id="transportLabel">Województwo</label>
+                    <select id="transport"><option value="0" data="malopolskie">małopolskie</option>
              <option value="50" name="śląskie" data="slask">śląskie</option>
              <option data="podkarpackie" value="50" >podkarpackie</option>
              <option data="świętokrzyskie" value="50">świętokrzyskie</option>
@@ -265,7 +272,7 @@
                                 <label for="">brama</label>
                                 <input type="text" class="inputPrice" id="inputSix" disabled>
                                 <label for="">kolor</label> <input type="text" class="inputPrice" id="inputSeven" disabled>
-                                <label for="">województwo</label> <input type="text" class="inputPrice" id="inputEight" disabled>
+                                <label for="" id="inputEightLabel">województwo</label> <input type="text" class="inputPrice" id="inputEight" disabled>
                                 <label for="">rodzaj dachu</label>
                                 <input type="text" class="inputPrice" id="inputNine" disabled>
                             </div>
@@ -275,7 +282,8 @@
                                 <label for="">wiadomość</label>
                                 <textarea name="" id="message-price" placeholder="wiadomosc"></textarea>
                                 <input type="submit" value="wyślij">
-                                <input type="checkbox" required> "Wyrażam zgodę na przetwarzanie moich danych osobowych przez WIATSTAL 34-620 Jodłownik zgodnie z ustawą z dnia 29.08.1997 r. o ochronie danych osobowych (t.j. Dz. U. z 2002 r. Nr 101, poz. 926 ze zm.). "
+                                <input type="checkbox" required> "Wyrażam zgodę na przetwarzanie moich danych osobowych przez WIATSTAL Andrzej Wilk KAWEC 44 
+32-415 Raciechowice zgodnie z ustawą z dnia 29.08.1997 r. o ochronie danych osobowych (t.j. Dz. U. z 2002 r. Nr 101, poz. 926 ze zm.). "
                             </div>
                         </div>
 

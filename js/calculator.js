@@ -253,7 +253,7 @@ var garageType=[];
             }
         }
         
-        if(arrayTransport.length == 0){
+        if(arrayTransport.length == 0 ){
             priceSubmitEight.value = "małopolskie";
         }else{
             for(i=0; i<arrayTransport.length; i++){
@@ -263,7 +263,7 @@ var garageType=[];
         
         priceSubmitNine.value=garageType;
 
-
+console.log(arrayTransport[0]);
 
     }
     document.getElementById('show-price-now').addEventListener('click', priceSend);
@@ -305,6 +305,23 @@ document.getElementById('transport').addEventListener('change',function(){
     arrayTransport.pop(arrayTransport[0]);
     arrayTransport.push(this.options[this.selectedIndex].getAttribute('data'));
     console.log(arrayTransport);
+})
+
+document.getElementById('country').addEventListener('change',function(){
+    var countryTransport=document.getElementById('country').value;
+        arrayTransport.pop(arrayTransport[0])
+        if(countryTransport>="2"){
+            document.getElementById('transport').style.display="none";
+            document.getElementById("inputEight").style.display="none";
+            document.getElementById('transportLabel').style.display="none";
+            document.getElementById('inputEightLabel').style.display="none";
+          
+        }else{
+            document.getElementById('transport').style.display="block";
+             document.getElementById('transportLabel').style.display="block";
+            document.getElementById("inputEight").style.display="block";
+              document.getElementById('inputEightLabel').style.display="block";
+        }
 })
 
 
