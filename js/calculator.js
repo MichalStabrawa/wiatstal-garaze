@@ -138,6 +138,17 @@ var garageType=[];
             document.getElementById("gate2show").style.display= "none";
             document.getElementById("gate1show").style.display="block";
         }
+        
+        if(gateShowValue=="300" & select1>="5"){
+             document.getElementById("gate2Bisshow").style.display= "block";
+            document.getElementById('gate2Bisshow').style.width="250px";
+            document.getElementById("gateBisShow").style.display="none";
+        }else{
+            document.getElementById("gate2Bisshow").style.display= "none";
+             
+            
+           
+        }
       
 
 

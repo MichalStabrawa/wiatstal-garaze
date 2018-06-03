@@ -1284,8 +1284,22 @@ button#buy {
     grey 20px);
     display:none;
 }
+.standard #gate2Bisshow{
+    width: 200px;
+    height: 190px;
+    border: 1px solid #000;
 
-.standard .gate2 span{
+
+    background: repeating-linear-gradient( to top,
+    grey,
+    #BFBFBF 10px,
+    grey 10px,
+    grey 20px);
+    margin-right:3px;
+    display:none;
+}
+
+.standard .gate2 span,.standard .gate2Bis span{
     display:block;
     width: 12px;
     border:2px solid #000;
